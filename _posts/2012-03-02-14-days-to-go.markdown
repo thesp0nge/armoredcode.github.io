@@ -1,0 +1,48 @@
+---
+layout: post
+title: "14 days to go"
+date: 2012-03-02 12:05
+comments: true
+published: false
+categories: blog news tdd bdd rspec cucumber minitest 
+hn: 
+---
+
+## Developers do really need a new application security blog
+
+At least this is what I hope for [this blog](http://armoredcode.com) I'm
+launching next 16<sup>th</sup> of March.  
+
+Crackers are very active in exploiting webapps those days. Stories are most of
+time connected with politics and economical worldwide situation.
+
+<!-- more -->
+
+I think, and this is my only opinion, that some _so called_ hackers groups are
+in search for notoriety instead of make some activism.
+
+[r00tw0rm](http://twitter.com/r00tw0rm) crew hacked 
+[united nation](http://thehackernews.com/2012/02/r00tw0rm-leak-united-nations.html) 
+and [nasa](http://thehackernews.com/2012/02/nasa-own3d-again-nasa-database-leaked.html) databases.
+
+As well [canon and
+siemes](http://thehackernews.com/2012/03/siemens-and-canons-databases-exploited.html) 
+database were hijacked and exposed to pastebin along people credentials.
+
+## Look at the service door
+
+I'm pretty sure that attackers didn't use the mainstream website to break those
+databases. Instead they leverage chat websites, backoffice applications and
+other entrypoints people deserve poor attention.
+
+Addressing application security needs using tests, using secure coding best
+practices is the only way to deploy strong and secure applications.
+
+If you want more, we will focus testing in web applications with a series of
+posts about [rspec](http://rspec.info), [cucumber](http://cukes.info),
+[minitest](https://github.com/seattlerb/minitest), and how to address security
+issues while developing the application.
+
+<p align="center" style="font-family: Andale mono, Menlo, Arial, Courier new, monospace; font-size: 2em;  color: #741012;">
+    16<sup>th</sup> March 2012
+</p>
