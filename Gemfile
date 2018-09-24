@@ -1,5 +1,6 @@
 source "https://rubygems.org"
 gem "type-on-strap"
+gem "stringex"
 gem "jekyll-gist"
 gem "jekyll-paginate"
 gem "jekyll-youtube"

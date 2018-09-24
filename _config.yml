@@ -1,6 +1,6 @@
 # SITE CONFIGURATION
-baseurl: "/blog"
-url: "https://sylhare.github.io"
+baseurl: ""
+url: "https://armoredcode.com"
 
 # THEME-SPECIFIC CONFIGURATION
 theme_settings:
@@ -78,8 +78,13 @@ paginate_path: "blog/page:num"
 # PORTFOLIO
 collections:
   portfolio:
-    output: true
+    output: false
     permalink: /:collection/:name
+
+# PATH
+source              : .
+destination         : ./_site
+permalink           : /blog/:title/
 
 # BUILD SETTINGS
 markdown: kramdown
