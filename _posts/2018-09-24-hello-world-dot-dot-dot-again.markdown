@@ -1,10 +1,11 @@
 ---
 layout: post
 title: "Hello world... again"
-feature-img: "assets/img/hello.jpg"
-thumbnail: "assets/img/hello.jpg"
-bootstrap: true
-tags: [cybersecurity, blog]
+author: sal
+categories: [ cybersecurity, blog ]
+image: assets/images/hello.jpg
+featured: true
+hidden: false
 ---
 
 It was 2014 when I wrote the latest post on armoredcode.com. It was about [Ruby patching Wednesday](https://armoredcode.com/blog/rails-patching-wednesday/) and tons of stuff changed in my life.
