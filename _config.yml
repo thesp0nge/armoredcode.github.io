@@ -1,97 +1,48 @@
-# SITE CONFIGURATION
+# Site
+name: "Armored Code"
+description: "A blog talking about offensive and defensive security and how to craft software in a secure way"
+
+meta_description: "A blog talking about offensive and defensive security and how to craft software in a secure way"
+logo: 'assets/images/armoredcode_heart.png'
+favicon: 'assets/images/armoredcode_heart.png'
 baseurl: ""
-url: "https://armoredcode.com"
+google_analytics: 'UA-17182118-1'
+disqus: 'armoredblog'
+mailchimp-list: 'https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a530e124561927d3bd8&amp;id=8c3d2d214b'
 
-# THEME-SPECIFIC CONFIGURATION
-theme_settings:
-  # Meta
-  title: Armored Code
-  avatar: assets/img/armoredcode_heart.png
-  favicon: assets/favicon.png
-  gravatar: 23e75747105bedfc499e962e399ad1ca
-  description: "A blog talking about offensive and defensive security and how to craft software in a secure way"
+# Authors
+authors:
+  thesp0nge:
+    name: Paolo
+    display_name: thesp0nge
+    gravatar: 23e75747105bedfc499e962e399ad1ca
+    email: paolo@codiceinsicuro.it
+    web: https://codiceinsicuro.it
+    twitter: https://twitter.com/thesp0nge
+    description: "OSCP guy. I break code and rebuild it with security in mind, taekwon-do, husband, dad. Chaotic good drow ranger. I blog @codiceinsicuro and @the_armoredcode."
 
-  # Header and footer text
-  header_text: >
-     <p>A blog talking about offensive and defensive security and how to craft software in a secure way</p>
-
-  header_text_feature_image: assets/img/pexels/background-board-carpentry-960137.jpg
-  footer_text: >
-    Proud on the Internet since 2012 and counting
+# Plugins
+plugins: 
+  - jekyll-paginate
+  - jekyll-archives
     
-    Powered by <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://github.com/sylhare/Type-on-Strap">Type on Strap</a>
-
-  # Icons
-  rss: true
-  email_address: paolo@armoredcode.com
-  behance:
-  bitbucket:
-  dribbble:
-  facebook:
-  flickr:
-  gitlab:
-  github: "thesp0nge"
-  google_plus:
-  instagram:
-  linkedin:  # Full URL
-  pinterest:
-  reddit:
-  soundcloud:
-  stack_exchange:  # Full URL
-  steam:
-  tumblr:
-  twitter: "armoredcode"
-  wordpress:
-  youtube:
-
-  # Scripts / Features 
-  google_analytics: "UA-17182118-1"
-  disqus_shortname: "armoredblog"
-  katex: true # Enable if using math markup
-  portfolio: true
-  search: true
-  tags: true
-  
-  
-  # Localization strings
-  str_follow_on: "Follow on"
-  str_rss_follow: "Follow RSS feed"
-  str_email: "Email"
-  str_next_post: "Next post"
-  str_previous_post: "Previous post"
-  str_next_page: "Next"
-  str_previous_page: "Prev"
-  str_continue_reading: "Continue reading"
-  str_javascript_required_disqus: "Please enable JavaScript to view comments."
-
-  # Colours, typography and padding
-  # Open the "_sass > base" folder, and open "_variables.scss"
-  google_fonts: "Source+Sans+Pro:400,700,700italic,400italic"
-
-  # Post navigation
-  post_navigation: false
-
-# PAGINATION
-paginate: 100
-paginate_path: "blog/page:num"
-
-# PORTFOLIO
-collections:
-  portfolio:
-    output: false
-    permalink: /:collection/:name
+# Archives
+jekyll-archives:
+  enabled:
+    - categories
+  layout: archive
+  permalinks:
+    category: '/category/:name/'
+    
+# Pagination 
+paginate: 6
+paginate_path: /page:num/
+    
+# Other
+markdown: kramdown
+highlighter: rouge
 
 # PATH
 source              : .
 destination         : ./_site
 permalink           : /blog/:title/
-
-# BUILD SETTINGS
-markdown: kramdown
-highlighter: rouge
-sass:
-  sass_dir: _sass
-  style: :compressed
-plugins: [jekyll-paginate, jekyll-seo-tag, jekyll-gist, jekyll-youtube]
-theme: type-on-strap # If using the theme as a jekyll theme gem
-exclude: ["Gemfile", "Gemfile.lock", "type-on-strap.gemspec", "*.gem", "LICENSE", "README.md", "screenshot.png"]
