@@ -4,7 +4,7 @@ title: "Build an API for fun with Grape"
 date: 2012-07-24 08:39
 comments: true
 published: true
-featured: true
+featured: false
 categories: builders ruby api tdd bdd armoredcode h4f gengiscan
 hn: http://news.ycombinator.com/item?id=4284762
 rd: http://redd.it/x2b41

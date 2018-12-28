@@ -4,7 +4,7 @@ title: "H4F - use robots.txt as a weapon with links rubygem"
 date: 2012-04-06 09:00
 comments: true
 published: true
-featured: true
+featured: false
 categories: h4f ruby rubygem hacking builders breakers source git robots.txt links
 hn: http://news.ycombinator.com/item?id=3806318
 rd: http://www.reddit.com/r/netsec/comments/rw099/h4f_use_robotstxt_as_a_weapon_with_links_rubygem/

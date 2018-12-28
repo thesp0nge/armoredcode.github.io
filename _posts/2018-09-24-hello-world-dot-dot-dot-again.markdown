@@ -1,10 +1,10 @@
 ---
 layout: post
 title: "Hello world... again"
-author: sal
+author: thesp0nge
 categories: [ cybersecurity, blog ]
 image: assets/images/hello.jpg
-featured: true
+featured: false
 hidden: false
 ---
 

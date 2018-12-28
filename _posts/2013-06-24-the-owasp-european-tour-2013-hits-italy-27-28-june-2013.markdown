@@ -3,7 +3,7 @@ layout: post
 title: "The Owasp European Tour 2013 hits Italy: 27-28 June 2013"
 date: 2013-06-24 14:50
 published: true
-featured: true
+featured: false
 categories: owasp owasp-conference appsec security tour rome italy
 thumb: tour.png
 level:

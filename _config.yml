@@ -1,5 +1,5 @@
 # Site
-name: "Armored Code"
+name: "The Armored Code"
 description: "A blog talking about offensive and defensive security and how to craft software in a secure way"
 
 meta_description: "A blog talking about offensive and defensive security and how to craft software in a secure way"
@@ -15,7 +15,7 @@ authors:
   thesp0nge:
     name: Paolo
     display_name: thesp0nge
-    gravatar: 23e75747105bedfc499e962e399ad1ca
+    gravatar: d05560cd673cf2f4114012616fd57c33
     email: paolo@codiceinsicuro.it
     web: https://codiceinsicuro.it
     twitter: https://twitter.com/thesp0nge

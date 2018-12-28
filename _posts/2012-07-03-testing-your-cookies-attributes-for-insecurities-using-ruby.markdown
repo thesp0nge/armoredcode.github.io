@@ -4,7 +4,7 @@ title: "Testing your cookie's attributes for insecurities using ruby"
 date: 2012-07-05 07:42
 comments: true
 published: true
-featured: true
+featured: false
 categories: builders breakers ruby webapp gems pentest speech rubyday owasp owasp-testing-guide pentest-with-ruby
 hn: http://news.ycombinator.com/item?id=4202206
 rd: http://redd.it/w2i0s
