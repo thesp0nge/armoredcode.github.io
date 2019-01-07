@@ -5,7 +5,7 @@ date: 2013-11-18 18:37
 comments: true
 published: true
 featured: false
-categories: codesake codesake-dawn dawnscanner code-review sast ruby
+tags: codesake codesake-dawn dawnscanner code-review sast ruby
 thumb: codesake-first-scan-title.png
 level:
 hn: 

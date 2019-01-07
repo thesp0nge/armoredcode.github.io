@@ -5,7 +5,7 @@ date: 2013-12-11 08:01
 comments: true
 published: true
 featured: false
-categories: appsec ruby rails ruby-on-rails security xss dos denial-of-service sqli sql-injection builders codesake codesake-dawn dawnscanner cve-2013-4491 cve-2013-4492 cve-2013-6415 cve-2013-6414 cve-2013-6416 cve-2013-6417
+tags: appsec ruby rails ruby-on-rails security xss dos denial-of-service sqli sql-injection builders codesake codesake-dawn dawnscanner cve-2013-4491 cve-2013-4492 cve-2013-6415 cve-2013-6414 cve-2013-6416 cve-2013-6417
 thumb: light-rails.png
 level:
 hn: 

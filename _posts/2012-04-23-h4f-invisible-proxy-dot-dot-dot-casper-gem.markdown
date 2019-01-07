@@ -4,7 +4,7 @@ title: "H4F - invisible proxy... casper gem"
 date: 2012-04-23 08:08
 comments: true
 published: true
-categories: h4f ruby rubygem hacking attack breakers builders
+tags: h4f ruby rubygem hacking attack breakers builders
 hn: http://news.ycombinator.com/item?id=3877725
 rd: http://www.reddit.com/r/programming/comments/snvhz/h4f_invisible_proxy_casper_gem/
 ---

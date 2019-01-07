@@ -5,7 +5,7 @@ date: 2012-05-30 07:53
 comments: true
 published: true
 featured: false
-categories: world builders breakers fun
+tags: world builders breakers fun
 hn: 
 rd: 
 ---

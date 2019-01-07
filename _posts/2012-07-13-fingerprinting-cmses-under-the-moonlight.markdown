@@ -5,7 +5,7 @@ date: 2012-07-16 08:46
 comments: true
 published: true
 featured: false
-categories: builders breakers ruby hacking gems cms information-gathering pentest fingerprint pentest-with-ruby
+tags: builders breakers ruby hacking gems cms information-gathering pentest fingerprint pentest-with-ruby
 hn: http://news.ycombinator.com/item?id=4249675
 rd: http://redd.it/wmt5l
 thumb: gengis.png

@@ -5,7 +5,7 @@ date: 2012-06-27 07:57
 comments: true
 published: true
 featured: false
-categories: builders breakers ruby webapp gems pentest speech rubyday owasp owasp-testing-guide pentest-with-ruby
+tags: builders breakers ruby webapp gems pentest speech rubyday owasp owasp-testing-guide pentest-with-ruby
 hn: http://news.ycombinator.com/item?id=4166118
 rd: http://redd.it/vodso
 ---

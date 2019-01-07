@@ -5,7 +5,7 @@ date: 2012-06-07 17:17
 comments: true
 published: true
 featured: false
-categories: breakers linkedin password information-leakage salt sha1 owasp 
+tags: breakers linkedin password information-leakage salt sha1 owasp 
 hn: http://news.ycombinator.com/item?id=4083141
 rd: http://redd.it/ur9ag
 ---

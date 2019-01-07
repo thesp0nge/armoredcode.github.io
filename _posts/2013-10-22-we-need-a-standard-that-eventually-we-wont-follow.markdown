@@ -5,7 +5,7 @@ date: 2013-10-22 08:27
 comments: true
 published: true
 featured: false
-categories: talk owasp builders appsec standard process workflow awareness conference
+tags: talk owasp builders appsec standard process workflow awareness conference
 thumb: funwork.png
 level:
 hn: 

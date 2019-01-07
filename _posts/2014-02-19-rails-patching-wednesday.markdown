@@ -5,8 +5,8 @@ date: 2014-02-19 07:49
 comments: true
 published: true
 featured: false
-categories: rails ruby-on-rails xss sql-injection cve-2014-0080 cve-2014-0081 cve-2014-0082 security builders
-feature-img: assets/img/rails-desert.png
+tags: rails ruby-on-rails xss sql-injection cve-2014-0080 cve-2014-0081 cve-2014-0082 security builders
+image: 
 level:
 hn: 
 rd: 

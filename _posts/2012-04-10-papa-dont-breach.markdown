@@ -4,7 +4,7 @@ title: "Papa don't breach"
 date: 2012-04-10 09:26
 comments: true
 published: true
-categories: breakers breach vulnerabilities world summary
+tags: breakers breach vulnerabilities world summary
 hn: http://news.ycombinator.com/item?id=3821304
 ---
 

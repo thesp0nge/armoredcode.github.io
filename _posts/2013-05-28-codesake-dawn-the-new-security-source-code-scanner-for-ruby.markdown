@@ -5,7 +5,7 @@ date: 2013-05-29 08:24
 comments: true
 published: true
 featured: false
-categories: ruby appsec code-review codesake codesake-dawn security sast
+tags: ruby appsec code-review codesake codesake-dawn security sast
 thumb: dawn.png
 level:
 hn: 

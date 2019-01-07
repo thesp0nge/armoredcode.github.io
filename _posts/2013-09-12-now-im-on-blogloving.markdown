@@ -5,7 +5,7 @@ date: 2013-09-12 15:32
 comments: true
 published: true
 featured: false
-categories: simple-life armoredcode blog
+tags: simple-life armoredcode blog
 thumb: blog.png
 level:
 hn: 

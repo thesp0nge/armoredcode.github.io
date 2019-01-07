@@ -5,7 +5,7 @@ date: 2012-12-03 18:45
 comments: true
 published: true
 featured: false
-categories: builders jsp ruby sake code-review sast codesake application-security appsec
+tags: builders jsp ruby sake code-review sast codesake application-security appsec
 thumb: regex.png
 level:
 hn: http://news.ycombinator.com/item?id=4870052

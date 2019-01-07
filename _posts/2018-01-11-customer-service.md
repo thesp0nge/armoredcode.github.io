@@ -1,8 +1,9 @@
 ---
 layout: post
+hidden: true
 title:  "What is Jekyll"
 author: thesp0nge
-categories: [ Jekyll, tutorial ]
+tags: [ Jekyll, tutorial ]
 image: assets/images/11.jpg
 featured: false
 hidden: true

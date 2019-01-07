@@ -5,7 +5,7 @@ date: 2012-10-23 09:10
 comments: true
 published: true
 featured: false
-categories: breakers ruby opensource hacking h4f wordpress wpscan basic-authentication http 
+tags: breakers ruby opensource hacking h4f wordpress wpscan basic-authentication http 
 thumb: wp-pumpkin.jpg
 hn: http://news.ycombinator.com/item?id=4686955
 rd: http://redd.it/11xoo1

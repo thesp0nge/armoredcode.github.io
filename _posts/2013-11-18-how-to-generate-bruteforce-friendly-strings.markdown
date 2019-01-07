@@ -5,7 +5,7 @@ date: 2013-11-18 07:59
 comments: true
 published: true
 featured: false
-categories: breakers owasp bruteforce regular-expressions string usernames passwords
+tags: breakers owasp bruteforce regular-expressions string usernames passwords
 thumb: strings.png
 level:
 hn: 

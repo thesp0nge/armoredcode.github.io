@@ -5,7 +5,7 @@ date: 2013-04-19 07:59
 comments: true
 published: true
 featured: false
-categories: appsec survey wapt code-review project-manager boss stakeholder
+tags: appsec survey wapt code-review project-manager boss stakeholder
 thumb: friday-im-love.png
 level:
 hn: https://news.ycombinator.com/item?id=5575418

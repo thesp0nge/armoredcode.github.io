@@ -5,7 +5,7 @@ date: 2014-01-24 08:01
 comments: true
 published: true
 featured: false
-categories: builders breakers c appsec discussion bug testing tdd owasp 
+tags: builders breakers c appsec discussion bug testing tdd owasp 
 thumb: cowboy.png
 level:
 hn: 

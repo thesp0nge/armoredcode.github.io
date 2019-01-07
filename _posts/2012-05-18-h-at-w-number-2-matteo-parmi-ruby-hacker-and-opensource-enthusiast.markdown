@@ -5,7 +5,7 @@ date: 2012-05-21 17:27
 comments: true
 published: true
 featured: false
-categories: builders hackers interview h@w
+tags: builders hackers interview h@w
 hn: 
 rd: 
 ---

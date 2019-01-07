@@ -5,7 +5,7 @@ date: 2012-10-28 09:02
 comments: true
 published: true
 featured: false
-categories: appsec code-review sast commercial-tools mindmap threat-modeling safe-coding owasp owasp-esapi awareness
+tags: appsec code-review sast commercial-tools mindmap threat-modeling safe-coding owasp owasp-esapi awareness
 thumb: pitfall.png
 hn: http://news.ycombinator.com/item?id=4712039
 rd: http://redd.it/129mcp

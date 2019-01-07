@@ -5,7 +5,7 @@ date: 2013-04-17 08:16
 comments: true
 published: true
 featured: false
-categories: appsec ruby pentest-with-ruby codesake railsberry railsberry2013 talk self simple-life
+tags: appsec ruby pentest-with-ruby codesake railsberry railsberry2013 talk self simple-life
 thumb: anxious.png
 level:
 hn: 

@@ -5,7 +5,7 @@ date: 2012-06-15 15:40
 comments: true
 published: true
 featured: false
-categories: builders breakers ruby ruby-on-rails sinatra padrino penetration-test armoredcode simple-life talk rubyday rubyday-it owasp owasp-testing-guide
+tags: builders breakers ruby ruby-on-rails sinatra padrino penetration-test armoredcode simple-life talk rubyday rubyday-it owasp owasp-testing-guide
 hn: http://news.ycombinator.com/item?id=4116704
 rd: http://redd.it/v3h3w
 ---

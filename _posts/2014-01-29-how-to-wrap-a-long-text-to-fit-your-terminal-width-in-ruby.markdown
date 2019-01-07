@@ -5,7 +5,7 @@ date: 2014-01-31 08:20
 comments: true
 published: true
 featured: false
-categories: builders how-to ruby text string wrap width
+tags: builders how-to ruby text string wrap width
 thumb: text.png
 level:
 hn: 

@@ -5,7 +5,7 @@ date: 2013-01-11 07:56
 comments: true
 published: true
 featured: false
-categories: lets-talk-about simple-life rails activerecord actionpack sql-injection defensive-programming filtering-input waf modsecurity owasp-modsecurity-crs java 0-day cve-2013-0155 cve-2013-0156 cve-2013-0422
+tags: lets-talk-about simple-life rails activerecord actionpack sql-injection defensive-programming filtering-input waf modsecurity owasp-modsecurity-crs java 0-day cve-2013-0155 cve-2013-0156 cve-2013-0422
 thumb: teaser.png
 level:
 hn: 

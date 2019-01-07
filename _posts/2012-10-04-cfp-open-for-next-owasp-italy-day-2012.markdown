@@ -5,7 +5,7 @@ date: 2012-10-04 09:09
 comments: true
 published: true
 featured: false
-categories: owasp owasp-day cfp conference owasp-italy
+tags: owasp owasp-day cfp conference owasp-italy
 hn: 
 rd: 
 thumb: we-want-you.png

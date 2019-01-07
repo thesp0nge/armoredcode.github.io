@@ -2,7 +2,7 @@
 layout: post
 title: "Hello world... again"
 author: thesp0nge
-categories: [ cybersecurity, blog ]
+tags: [ cybersecurity, blog ]
 image: assets/images/hello.jpg
 featured: false
 hidden: false

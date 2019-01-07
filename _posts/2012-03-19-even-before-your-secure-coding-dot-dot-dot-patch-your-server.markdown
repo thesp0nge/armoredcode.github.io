@@ -4,7 +4,7 @@ title: "Even before your secure coding... patch your server"
 date: 2012-03-19 09:10
 comments: true
 published: true
-categories: builders patching rdp ms12-020 monday-report
+tags: builders patching rdp ms12-020 monday-report
 hn: http://news.ycombinator.com/item?id=3722646
 ---
 

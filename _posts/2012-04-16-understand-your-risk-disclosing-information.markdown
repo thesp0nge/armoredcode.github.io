@@ -4,7 +4,7 @@ title: "Understand your risk: disclosing information"
 date: 2012-04-17 10:00
 comments: true
 published: true
-categories: builders breakers pentest webapp vulnerabilities
+tags: builders breakers pentest webapp vulnerabilities
 hn: 
 rd: http://www.reddit.com/r/programming/comments/sdydd/understand_your_risk_disclosing_information/
 ---

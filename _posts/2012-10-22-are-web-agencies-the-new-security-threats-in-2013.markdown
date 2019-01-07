@@ -5,7 +5,7 @@ date: 2012-10-22 07:50
 comments: true
 published: true
 featured: false
-categories: builders outsourcing web-agency appsec ssdlc 
+tags: builders outsourcing web-agency appsec ssdlc 
 thumb: web-agency.jpg
 hn: 
 rd: 

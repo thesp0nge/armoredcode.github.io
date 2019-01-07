@@ -3,8 +3,8 @@ name: "The Armored Code"
 description: "A blog talking about offensive and defensive security and how to craft software in a secure way"
 
 meta_description: "A blog talking about offensive and defensive security and how to craft software in a secure way"
-logo: 'assets/images/armoredcode_heart.png'
-favicon: 'assets/images/armoredcode_heart.png'
+logo: 'assets/images/logo.png'
+favicon: 'assets/images/logo.png'
 baseurl: ""
 google_analytics: 'UA-17182118-1'
 disqus: 'armoredblog'

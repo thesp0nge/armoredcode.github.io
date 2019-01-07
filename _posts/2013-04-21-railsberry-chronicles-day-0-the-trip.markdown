@@ -5,7 +5,7 @@ date: 2013-04-21 15:46
 comments: true
 published: true
 featured: false
-categories: ruby conference talk railsberry poland cracow 
+tags: ruby conference talk railsberry poland cracow 
 thumb: imcurious.png
 level:
 hn: 

@@ -5,7 +5,7 @@ date: 2012-11-21 08:26
 comments: true
 published: true
 featured: false
-categories: ruby padrino builders authentication breakers omniauth howto h4f
+tags: ruby padrino builders authentication breakers omniauth howto h4f
 thumb: authentication.jpg
 level:
 hn: http://news.ycombinator.com/item?id=4813592

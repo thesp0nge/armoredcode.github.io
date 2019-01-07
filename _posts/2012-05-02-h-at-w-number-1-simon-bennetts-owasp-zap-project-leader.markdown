@@ -5,7 +5,7 @@ date: 2012-05-04 07:45
 comments: true
 published: true
 featured: false
-categories: breakers builders hackers interview h@w
+tags: breakers builders hackers interview h@w
 hn: http://news.ycombinator.com/item?id=3927388
 rd: http://redd.it/t6ii8
 ---

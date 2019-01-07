@@ -5,7 +5,7 @@ date: 2013-09-26 08:06
 comments: true
 published: true
 featured: false
-categories: fingerprint h4f gengiscan ruby breakers attack pentest-with-ruby pentest phpbb mechanize regular-expressions regex
+tags: fingerprint h4f gengiscan ruby breakers attack pentest-with-ruby pentest phpbb mechanize regular-expressions regex
 thumb: phpbb3.png
 level:
 hn: 

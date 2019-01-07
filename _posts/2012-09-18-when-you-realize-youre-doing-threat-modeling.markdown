@@ -5,7 +5,7 @@ date: 2012-09-18 08:41
 comments: true
 published: true
 featured: false
-categories: builders wapt appsec threat-model threat questionnaire
+tags: builders wapt appsec threat-model threat questionnaire
 hn: 
 rd: 
 thumb: t-model.jpg

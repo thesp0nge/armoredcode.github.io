@@ -5,7 +5,7 @@ date: 2013-03-18 18:45
 comments: true
 published: true
 featured: false
-categories: birthday rails ruby-on-rails tenderlove builders breakers xss cve-2013-1855 cve-2013-1857
+tags: birthday rails ruby-on-rails tenderlove builders breakers xss cve-2013-1855 cve-2013-1857
 thumb: cake.png
 level:
 hn: 

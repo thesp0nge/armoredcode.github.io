@@ -5,7 +5,7 @@ date: 2012-03-21 9:00
 comments: true
 published: true
 featured: false
-categories: breakers pentest attack api awareness pentest-with-ruby
+tags: breakers pentest attack api awareness pentest-with-ruby
 hn: http://news.ycombinator.com/item?id=3734208
 rd: http://www.reddit.com/r/netsec/comments/rcs59/understanding_your_attack_exposure/
 ---

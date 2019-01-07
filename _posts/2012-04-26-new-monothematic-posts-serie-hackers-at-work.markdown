@@ -5,7 +5,7 @@ date: 2012-04-27 07:52
 comments: true
 published: true
 featured: false
-categories: breakers builders hackers interview h@w
+tags: breakers builders hackers interview h@w
 hn: 
 ---
 

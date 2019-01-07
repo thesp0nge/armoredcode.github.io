@@ -5,7 +5,7 @@ date: 2012-08-04 14:50
 comments: true
 published: true
 featured: false
-categories: ruby cross builders tdd aliasing attribute appsec-in-august sea vacation
+tags: ruby cross builders tdd aliasing attribute appsec-in-august sea vacation
 hn: 
 rd: 
 thumb: sea.jpg

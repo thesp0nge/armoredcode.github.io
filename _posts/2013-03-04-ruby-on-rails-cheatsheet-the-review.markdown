@@ -5,7 +5,7 @@ date: 2013-03-05 09:50
 comments: true
 published: true
 featured: false
-categories: owasp builders ruby ruby-on-rails cheatsheet appsec
+tags: owasp builders ruby ruby-on-rails cheatsheet appsec
 thumb: cheatsheet.png
 level:
 hn: 

@@ -5,7 +5,7 @@ date: 2013-09-18 18:00
 comments: true
 published: true
 featured: false
-categories: ruby appsec builders h4f pentest-with-ruby broken-authentication-session-management xss information-gatering codesake
+tags: ruby appsec builders h4f pentest-with-ruby broken-authentication-session-management xss information-gatering codesake
 thumb: talk.png
 level:
 hn: 

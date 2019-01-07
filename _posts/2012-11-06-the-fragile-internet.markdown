@@ -5,7 +5,7 @@ date: 2012-11-06 07:55
 comments: true
 published: true
 featured: false
-categories: breakers anonymous nbc 5-11 defacement xss owasp 
+tags: breakers anonymous nbc 5-11 defacement xss owasp 
 thumb: fragile.png
 level:
 hn: 

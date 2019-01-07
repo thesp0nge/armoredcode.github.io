@@ -5,7 +5,7 @@ date: 2013-11-26 08:39
 comments: true
 published: true
 featured: false
-categories: builders ruby omniauth omniauth-facebook csrf heap-overflow vulnerabilities codesake codesake-dawn cve-2013-4164 cve-2013-4562
+tags: builders ruby omniauth omniauth-facebook csrf heap-overflow vulnerabilities codesake codesake-dawn cve-2013-4164 cve-2013-4562
 thumb: source-code.png
 level:
 hn: 

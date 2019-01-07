@@ -5,7 +5,7 @@ date: 2012-08-28 08:31
 comments: true
 published: true
 featured: false
-categories: octopress builders ruby plugin 
+tags: octopress builders ruby plugin 
 hn: 
 rd: 
 ---

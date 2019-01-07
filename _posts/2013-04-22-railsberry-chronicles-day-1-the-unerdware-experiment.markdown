@@ -5,7 +5,7 @@ date: 2013-04-22 23:06
 comments: true
 published: true
 featured: false
-categories: ruby conference talk railsberry poland cracow 
+tags: ruby conference talk railsberry poland cracow 
 thumb: railsberrymouses.png
 level:
 hn: 

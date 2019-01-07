@@ -5,7 +5,7 @@ date: 2013-03-12 07:57
 comments: true
 published: true
 featured: false
-categories: awareness railsberry2013 talk survey builders appsec
+tags: awareness railsberry2013 talk survey builders appsec
 thumb: hostile.png
 level:
 hn: https://news.ycombinator.com/item?id=5360998

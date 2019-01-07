@@ -5,7 +5,7 @@ date: 2012-11-05 09:00
 comments: true
 published: true
 featured: false
-categories: breakers cross-site-scriting owasp owasp-top-10 xss ie xss-filter marketing security-feature attack-filtering h4f casper webrick ruby 
+tags: breakers cross-site-scriting owasp owasp-top-10 xss ie xss-filter marketing security-feature attack-filtering h4f casper webrick ruby 
 thumb: borderline.jpg
 level:
 hn: http://news.ycombinator.com/item?id=4742655

@@ -1,10 +1,11 @@
 ---
 layout: post
 title: "A Cracking the Perimeter journey: 0 - the beginning"
-feature-img:  assets/img/ruediger-theiselmann-1055829-unsplash.jpg
-thumbnail:  assets/img/ruediger-theiselmann-1055829-unsplash.jpg
+image:  assets/images/ruediger-theiselmann-1055829-unsplash.jpg
 bootstrap: true
+categories: [ osce ]
 tags: [ctp, osce, offensive security]
+author: thesp0nge
 ---
 
 In 2018 I refreshed my offensive security skills, attending the "Penetration

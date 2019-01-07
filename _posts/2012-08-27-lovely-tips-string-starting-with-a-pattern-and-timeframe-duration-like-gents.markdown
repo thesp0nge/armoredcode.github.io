@@ -5,7 +5,7 @@ date: 2012-08-27 09:24
 comments: true
 published: true
 featured: false
-categories: builders ruby hacking lovely-tips string regex regular-expression time time-difference duration
+tags: builders ruby hacking lovely-tips string regex regular-expression time time-difference duration
 hn: 
 rd: 
 ---

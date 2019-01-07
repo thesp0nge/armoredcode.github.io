@@ -5,7 +5,7 @@ date: 2013-06-28 08:00
 comments: true
 published: true
 featured: false
-categories: ruby h4f hacking bot api gem rubygem codesake
+tags: ruby h4f hacking bot api gem rubygem codesake
 thumb: walle.png
 level:
 hn: 

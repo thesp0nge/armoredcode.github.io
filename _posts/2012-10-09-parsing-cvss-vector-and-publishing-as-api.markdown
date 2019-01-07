@@ -5,7 +5,7 @@ date: 2012-10-09 13:01
 comments: true
 published: true
 featured: false
-categories: builders api grape gengiscan cvss ruby rubygems opensource h4f
+tags: builders api grape gengiscan cvss ruby rubygems opensource h4f
 thumb:
 hn: 
 rd: 

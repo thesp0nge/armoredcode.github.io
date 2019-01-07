@@ -5,7 +5,7 @@ date: 2012-07-26 08:36
 comments: true
 published: true
 featured: false
-categories: builders TDD BDD test appsec security-by-design design architecture
+tags: builders TDD BDD test appsec security-by-design design architecture
 hn: http://news.ycombinator.com/item?id=4294771
 rd: http://redd.it/x6fw9
 ---

@@ -2,7 +2,7 @@
 layout: post
 title:  "Quick Start Guide"
 author: thesp0nge
-categories: [ Jekyll, tutorial ]
+tags: [ Jekyll, tutorial ]
 image: assets/images/12.jpg
 featured: false
 hidden: true

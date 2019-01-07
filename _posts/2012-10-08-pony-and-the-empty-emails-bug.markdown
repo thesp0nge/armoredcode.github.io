@@ -5,7 +5,7 @@ date: 2012-10-08 08:03
 comments: true
 published: true
 featured: false
-categories: builders ruby tdd bdd email pony gem rubygem empty-body
+tags: builders ruby tdd bdd email pony gem rubygem empty-body
 thumb:
 hn: 
 rd: 

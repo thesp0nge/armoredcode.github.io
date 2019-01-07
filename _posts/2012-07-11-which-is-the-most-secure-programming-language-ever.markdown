@@ -5,7 +5,7 @@ date: 2012-07-11 08:34
 comments: true
 published: true
 featured: false
-categories: builders appsec awareness programming-language 
+tags: builders appsec awareness programming-language 
 hn: 
 rd: http://redd.it/wdk1a
 ---

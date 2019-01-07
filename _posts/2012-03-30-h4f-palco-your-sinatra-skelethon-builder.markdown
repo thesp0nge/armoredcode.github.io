@@ -4,7 +4,7 @@ title: "H4F - palco: your Sinatra skeleton builder"
 date: 2012-03-30 9:00
 comments: true
 published: true
-categories: h4f ruby rubygem hacking builders source git sinatra webapp
+tags: h4f ruby rubygem hacking builders source git sinatra webapp
 hn: http://news.ycombinator.com/item?id=3774901
 rd: http://www.reddit.com/r/ruby/comments/rknc8/h4f_palco_your_sinatra_skeleton_builder/
 ---

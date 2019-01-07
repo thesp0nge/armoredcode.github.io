@@ -5,7 +5,7 @@ date: 2013-04-11 07:57
 comments: true
 published: true
 featured: false
-categories: simple-life film kitchen julie-powell application-security appsec film fun railsberry talk conference codesake startup saas
+tags: simple-life film kitchen julie-powell application-security appsec film fun railsberry talk conference codesake startup saas
 thumb: ratatouille.png
 level:
 hn: 

@@ -4,7 +4,7 @@ title: "Hello world"
 date: 2012-03-16 09:58
 comments: true
 published: true
-categories: post armoredcode startup hello-world
+tags: post armoredcode startup hello-world
 hn: http://news.ycombinator.com/item?id=3712202
 ---
 

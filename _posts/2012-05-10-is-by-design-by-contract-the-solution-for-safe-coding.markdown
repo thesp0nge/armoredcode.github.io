@@ -5,7 +5,7 @@ date: 2012-05-10 08:02
 comments: true
 published: true
 featured: false
-categories: builders programming-language design development api summer-project coat design-by-contract
+tags: builders programming-language design development api summer-project coat design-by-contract
 hn: http://news.ycombinator.com/item?id=3952317
 rd: http://redd.it/tg682
 ---

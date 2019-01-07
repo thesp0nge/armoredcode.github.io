@@ -5,7 +5,7 @@ date: 2012-05-16 18:58
 comments: true
 published: true
 featured: false
-categories: coat ruby git github compiler lexer parser racc the-dragon-book builders tdd bdd design-by-contract
+tags: coat ruby git github compiler lexer parser racc the-dragon-book builders tdd bdd design-by-contract
 hn: http://news.ycombinator.com/item?id=3981041
 rd: http://redd.it/tpowd
 thumb: coat.jpg

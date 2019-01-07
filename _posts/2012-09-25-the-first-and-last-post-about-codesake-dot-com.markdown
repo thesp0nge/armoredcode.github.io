@@ -5,7 +5,7 @@ date: 2012-09-26 08:39
 comments: true
 published: true
 featured: false
-categories: appsec startup codesake code-review pentest penetration-test pentest-with-ruby
+tags: appsec startup codesake code-review pentest penetration-test pentest-with-ruby
 hn: 
 rd: codesake.png
 ---

@@ -5,7 +5,7 @@ date: 2013-07-30 07:58
 comments: true
 published: true
 featured: false
-categories: dast ruby appsec crawling information-gathering pentest-with-ruby rubygems codesake
+tags: dast ruby appsec crawling information-gathering pentest-with-ruby rubygems codesake
 thumb: crawler.png
 level:
 hn: 

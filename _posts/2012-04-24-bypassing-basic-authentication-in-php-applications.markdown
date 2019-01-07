@@ -5,7 +5,7 @@ date: 2012-04-26 07:59
 comments: true
 published: true
 featured: false
-categories: breakers php basic-authentication design 
+tags: breakers php basic-authentication design 
 hn: http://news.ycombinator.com/item?id=3892897
 rd: http://redd.it/st9nc
 ---

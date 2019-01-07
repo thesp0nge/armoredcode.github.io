@@ -5,7 +5,7 @@ date: 2012-06-12 08:05
 comments: true
 published: true
 featured: false
-categories: builders breakers ruby webapp gems pentest speech rubyday owasp owasp-testing-guide pentest-with-ruby
+tags: builders breakers ruby webapp gems pentest speech rubyday owasp owasp-testing-guide pentest-with-ruby
 hn: 
 rd: 
 thumb: hacker-for-dummies.jpg

@@ -5,7 +5,7 @@ date: 2013-04-23 14:50
 comments: true
 published: true
 featured: false
-categories: ruby conference talk railsberry poland cracow 
+tags: ruby conference talk railsberry poland cracow 
 thumb: thesp0nge-talk.png
 level:
 hn: 

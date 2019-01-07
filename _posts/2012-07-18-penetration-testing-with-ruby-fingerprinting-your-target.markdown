@@ -5,7 +5,7 @@ date: 2012-07-19 08:01
 comments: true
 published: true
 featured: false
-categories: builders breakers ruby hacking gems cms information-gathering pentest fingerprint pentest-with-ruby ebook pt-with-ruby-fp
+tags: builders breakers ruby hacking gems cms information-gathering pentest fingerprint pentest-with-ruby ebook pt-with-ruby-fp
 hn: 
 rd: 
 ---

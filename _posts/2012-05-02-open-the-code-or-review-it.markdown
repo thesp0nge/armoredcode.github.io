@@ -5,7 +5,7 @@ date: 2012-05-02 08:09
 comments: true
 published: true
 featured: false
-categories: builders code-review database dbms oracle cve-2012-1675 cve tnslistener man-in-the-middle
+tags: builders code-review database dbms oracle cve-2012-1675 cve tnslistener man-in-the-middle
 hn: http://news.ycombinator.com/item?id=3917954
 rd: http://redd.it/t2z9f
 ---

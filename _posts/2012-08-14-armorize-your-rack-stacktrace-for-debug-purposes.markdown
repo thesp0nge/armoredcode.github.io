@@ -5,7 +5,7 @@ date: 2012-08-14 16:08
 comments: true
 published: true
 featured: false
-categories: builders ruby ruby-on-rails rack sinatra padrino exception appsec owasp owasp-top-10 improper-error-handling
+tags: builders ruby ruby-on-rails rack sinatra padrino exception appsec owasp owasp-top-10 improper-error-handling
 hn: http://news.ycombinator.com/item?id=4381300
 rd: http://redd.it/y7emy
 thumb: kaboom.png

@@ -5,7 +5,7 @@ date: 2012-12-23 09:00
 comments: true
 published: true
 featured: false
-categories: builders jsp ruby sake code-review sast codesake application-security appsec
+tags: builders jsp ruby sake code-review sast codesake application-security appsec
 thumb: sake.png
 level:
 hn: 

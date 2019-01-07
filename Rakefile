@@ -162,10 +162,12 @@ def create_post(filename, title, category, tags)
     post.puts "---"
     post.puts "layout: #{category}"
     post.puts "title: \"#{title.gsub(/&/,'&amp;')}\""
-    post.puts "feature-img: "
-    post.puts "thumbnail: "
+    post.puts "image: "
     post.puts "bootstrap: true"
     post.puts "tags: [#{tags}]"
+    post.puts "categories: [ ]"
+    post.puts "author: thesp0nge"
+
     post.puts "---"
   end
 end

@@ -5,7 +5,7 @@ date: 2012-11-30 07:53
 comments: true
 published: true
 featured: false
-categories: breakers builders api nexpose va ruby rapid7 commercial-tool vulnerability-assessment nexty
+tags: breakers builders api nexpose va ruby rapid7 commercial-tool vulnerability-assessment nexty
 thumb: nexty.png
 level:
 hn: 

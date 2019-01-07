@@ -5,7 +5,7 @@ date: 2013-07-29 09:00
 comments: true
 published: true
 featured: false
-categories: appsec code-review sast static-analysis project-managers it-managers quote quotation 37signals myth forecast
+tags: appsec code-review sast static-analysis project-managers it-managers quote quotation 37signals myth forecast
 thumb: planning.png
 level:
 hn: 

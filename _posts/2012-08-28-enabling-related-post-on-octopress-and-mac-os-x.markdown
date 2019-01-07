@@ -5,7 +5,7 @@ date: 2012-08-29 09:27
 comments: true
 published: true
 featured: false
-categories: octopress blog gsl configuration howto related-post
+tags: octopress blog gsl configuration howto related-post
 hn: 
 rd: http://redd.it/z0cl6
 ---

@@ -5,7 +5,7 @@ date: 2013-10-15 08:10
 comments: true
 published: true
 featured: false
-categories: crypto appsec builders h4f securerandom ruby key owasp esapi oneliner
+tags: crypto appsec builders h4f securerandom ruby key owasp esapi oneliner
 thumb: im-so-random.png
 level:
 hn: 

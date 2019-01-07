@@ -5,7 +5,7 @@ date: 2012-11-20 07:54
 comments: true
 published: true
 featured: false
-categories: owasp owasp-orizon builders core-review sast antlr java opensource github milk storytelling
+tags: owasp owasp-orizon builders core-review sast antlr java opensource github milk storytelling
 thumb: seaside-horizon.png
 level:
 hn: 

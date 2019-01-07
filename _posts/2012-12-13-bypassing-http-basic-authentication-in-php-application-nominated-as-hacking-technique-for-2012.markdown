@@ -5,7 +5,7 @@ date: 2012-12-13 07:51
 comments: true
 published: true
 featured: false
-categories: 2012 breakers appsec php basic-authentication design 
+tags: 2012 breakers appsec php basic-authentication design 
 thumb: php.png
 level:
 hn: 

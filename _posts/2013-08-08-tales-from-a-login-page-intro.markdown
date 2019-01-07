@@ -5,7 +5,7 @@ date: 2013-08-08 15:22
 comments: true
 published: true
 featured: false
-categories: h4f pentest-with-ruby owasp tales-from-login owasp-top-10 broken-authentication basm login session authentication railsberry 
+tags: h4f pentest-with-ruby owasp tales-from-login owasp-top-10 broken-authentication basm login session authentication railsberry 
 thumb: authentication.jpg
 level:
 hn: 

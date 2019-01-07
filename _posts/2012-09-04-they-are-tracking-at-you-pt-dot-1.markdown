@@ -5,7 +5,7 @@ date: 2012-09-07 10:05
 comments: true
 published: true
 featured: false
-categories: breakers cookie http privacy zombie-cookie tracking spy
+tags: breakers cookie http privacy zombie-cookie tracking spy
 hn: 
 rd: http://redd.it/zhxtl
 thumb: zombie-cookies.jpeg
