@@ -26,6 +26,8 @@ authors:
 plugins: 
   - jekyll-paginate
   - jekyll-archives
+  - jekyll-gist
+  - jekyll-asciinema
     
 # Archives
 jekyll-archives:

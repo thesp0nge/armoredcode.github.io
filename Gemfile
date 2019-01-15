@@ -11,7 +11,8 @@ source "https://rubygems.org"
 gem 'stringex'
 gem 'wdm', '>= 0.1.0' if Gem.win_platform?
 group :jekyll_plugins do
-    gem  'jekyll-gist'
+    gem 'jekyll-gist'
+    gem 'jekyll-asciinema'
     gem 'jekyll-youtube'
     gem 'jekyll-feed'
     gem 'jekyll-sitemap'

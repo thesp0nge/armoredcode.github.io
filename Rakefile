@@ -199,6 +199,6 @@ namespace :blog do
   desc "Generate jekyll site"
   task :generate do
     puts "## Generating Site with Jekyll"
-    system "jekyll build"
+    system "JEKYLL_ENV=production jekyll build"
   end
 end
