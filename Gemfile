@@ -11,6 +11,7 @@ source "https://rubygems.org"
 gem 'stringex'
 gem 'wdm', '>= 0.1.0' if Gem.win_platform?
 group :jekyll_plugins do
+    gem 'jekyll-video-tag'
     gem 'jekyll-gist'
     gem 'jekyll-asciinema'
     gem 'jekyll-youtube'
