@@ -29,6 +29,7 @@ plugins:
   - jekyll-gist
   - jekyll-asciinema
   - jekyll_video_tag
+  - jekyll-last-modified-at
     
 # Archives
 jekyll-archives:
