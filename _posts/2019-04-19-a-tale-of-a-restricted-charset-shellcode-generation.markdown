@@ -76,6 +76,10 @@ get rid of this by calculating the
 we want to write and by finding 2 or 3 values that when added will result in
 our word's complement.
 
+Those values will be subtracted from EAX register, after it has been set to 0.
+At the end, EAX will be set to the desired word and it can be pushed into the
+stack.
+
 {% highlight python %}
   def generate_add_eax_sum_shellcode(result):
   compl_two = int("FFFFFFFF", 16) - int(result, 16) + 1
@@ -165,4 +169,4 @@ Next steps will be:
   framework (with a working shellerate binary script of course)
 * make the AND process to use random values, so to increase shellcode entropy
 * having fun with other register mathematical instructions so to encode with
-  SUB, MUL, DIV, ...
+  ADD, MUL, DIV, ...
