@@ -5,11 +5,11 @@ date: 2013-04-23 14:50
 comments: true
 published: true
 featured: false
-tags: ruby conference talk railsberry poland cracow 
+tags: ruby conference talk railsberry poland cracow
 thumb: thesp0nge-talk.png
 level:
-hn: 
-rd: 
+hn:
+rd:
 ---
 
 Finally the day I gave the talk is arrived and it's gone. Going on stage in
@@ -23,7 +23,7 @@ applications were broken Internet is still working ( I guess ).
 
 <!-- more -->
 
-## A particular mention to... 
+## A particular mention to...
 
 [Felix Geisendoerfer](http://www.railsberry.com/speakers#felix) gave us today
 an **oustanding** talk about to make an [http://nodecopter.com/](drone) to fly
@@ -35,12 +35,12 @@ Kudos to [https://twitter.com/felixge](Felix) for his hacks and for great talk.
 
 The code you need to play against a web application is:
 
-``` 
+```
 $ gem install ciphersurfer
 $ gem install gengiscan
 $ gem install codesake_links
 $ gem install cross
-``` 
+```
 
 Soon [cross](https://github.com/thesp0nge/cross),
 [gengiscan](https://github.com/thesp0nge/gengiscan) and
@@ -65,19 +65,19 @@ So, I hope you enjoyed the talk. In case you missed, because you were not there,
 With demo videos too.
 
 ### Railsberry 2013 - Navigating the attack target after the information gathering stage
-{% youtube NgNhp_bHsgM %} 
+{% include youtube.html id="NgNhp_bHsgM" %}
 
 ### Railsberry 2013 - First XSS spotted in the wild
-{% youtube DyyfdUUf9-4 %}  
+{% include youtube.html id="DyyfdUUf9-4" %}
 
 ### Railsberry 2013 - Information gathering
-{% youtube TVQGep-kXwQ %} 
+{% include youtube.html id="TVQGep-kXwQ" %}
 
 ### Railsberry 2013 - Bruteforce users login name
-{% youtube -iLoTW26SKg %} 
+{% include youtube.html id="-iLoTW26SKg" %}
 
 ### Railsberry 2013 - Find reflected XSS with cross
-{% youtube -3I185hGjCQ %} 
+{% include youtube.html id="-3I185hGjCQ" %}
 
 If you have any questions, comments or criticisms please use my [ask me anything box](https://github.com/armoredcode/feedback/issues) on
 [github](https://gitub.com).

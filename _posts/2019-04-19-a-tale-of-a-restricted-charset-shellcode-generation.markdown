@@ -9,14 +9,14 @@ author: thesp0nge
 ---
 
 During my OSCE exam preparation I had to deal with shellcode writing experience
-where very few allower characters were available. 
+where very few allower characters were available.
 
 This brilliant talk by [@muts](https://twitter.com/muts), lead us to get in
 touch with a new encoding technique. When you can't directly write words on the
 stack, due to bad characters, you can eventually let a register to contained
 the desired word and then push the register into the stack.
 
-{% youtube gHISpAZiAm0 %}
+{% include youtube.html id="gHISpAZiAm0" %}
 
 As you can see from the video taken at Defcon 16, the code exploits the fact
 that after the shellcode it has been written into the stack, very close to the
@@ -58,7 +58,7 @@ has been put in AND with those two values, it will be set to zero.
 
   if reg == "eax":
     return "\\x25"+first_and_hex+"\\x25"+second_and_hex
-  
+
   if reg == "ebx":
     return "\\xb1\\xe3"+first_and_hex+"\\xb1\\xe3"+second_and_hex
   if reg == "ebx":
@@ -85,7 +85,7 @@ stack.
   compl_two = int("FFFFFFFF", 16) - int(result, 16) + 1
 
   c = find_encoded_sequence(compl_two)
-  c2_h = "0x{:08x}".format(compl_two) 
+  c2_h = "0x{:08x}".format(compl_two)
   f = ["".join(["{:02x}".format(j) for j in list(i)]) for i in zip(*c[::-1])]
   f_sum = "0x{:08x}".format(sum([int(i, 16) for i in f]) % (2**32))
 

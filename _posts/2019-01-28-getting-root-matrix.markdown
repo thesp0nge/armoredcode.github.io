@@ -45,7 +45,7 @@ suggests to see at port 31337.
 
 On port 31337, there is a base64 encoded hint.
 
-{% youtube "https://www.youtube.com/watch?v=gD_w0sbGFZg" %}
+{% include youtube.html id="gD_w0sbGFZg" %}
 
 Decoding the base64, we can see as a suggestion this statement:
 
@@ -81,7 +81,7 @@ alphanumeric combinations.
 
 {%asciicast 223855%}
 
-We will use ncrack, passing the generated list, to find the password. 
+We will use ncrack, passing the generated list, to find the password.
 {%asciicast 223859%}
 
 The guest account ssh password is k1ll0r7n.
@@ -94,7 +94,7 @@ we can't launch ls to go deeper into our journey. Luckly enough _vi_ editor is
 in our PATH, we can then use the _\!/bin/bash_ escape sequence to have a shell
 spawned for us.
 
-This shell is not restricted, event the PATH variable is still mangled. 
+This shell is not restricted, event the PATH variable is still mangled.
 Starting the post exploitation steps, a misconfiguration in sudoers file
 reveals that every account on the system can launch sudo to launch every
 command as root.
@@ -115,4 +115,3 @@ This machine is very simple but it can teach a couple of interesting lessons:
   configuration. Sometimes, it's the human error the simplest path to root.
 
 Enjoy it!
-

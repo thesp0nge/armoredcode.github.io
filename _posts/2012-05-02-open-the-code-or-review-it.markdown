@@ -55,7 +55,7 @@ networks.
 
 You have also to consider that a lot of third-party software were build in the
 meantime over such vulnerable versions and were certifified to run only on
-certain Oracle versions. 
+certain Oracle versions.
 
 All of those are exposed to same vulnerability and it's **not sure** will
 certify against the new Oracle Critical Patch that will be released to fix (we
@@ -70,14 +70,14 @@ all hope this time for real) the vulnerability).
 
 It happens all day, some Oracle Critical patches can't be applied because the
 **third party vendor doesn't certify its product to be compliant with that
-one**. 
+one**.
 
 Big vendors are just lazy and they certify compliancy with a patch usually with
 some months delay. But what about mid-size companies or even custom made
 products?
 
 Certifications make _stakeholders_ so comfortable about nothing bad will happen
-to their company. 
+to their company.
 
 After all, the software they paid for is certified doesn't it?
 
@@ -104,7 +104,7 @@ not installed a patch, or with certain versions of java.
 > _opensource_ project, the reaction time is misurable in **days** _(remember: 4
 > years)_ and all is exposed and disclosed.
 
-Certifications are the most hilarious bit of all the story. 
+Certifications are the most hilarious bit of all the story.
 
 You tie your product to another product version make it immutable to changes in
 time. No one will ever upgrade operating system or other daemons because this
@@ -150,4 +150,4 @@ regression test would fail.
 
 The 0day exploit in this video.
 
-{% youtube hE3-AkxSX3w %}
+{% include youtube.html id="hE3-AkxSX3w" %}
