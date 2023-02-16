@@ -9,11 +9,11 @@ tags: appsec survey wapt code-review project-manager boss stakeholder
 thumb: friday-im-love.png
 level:
 hn: https://news.ycombinator.com/item?id=5575418
-rd: 
+rd:
 ---
 
 A month ago I opened a "one question only" survey on
-[surveytmonkey](http://surveymonkey.com). 
+[surveytmonkey](http://surveymonkey.com).
 
 I asked _"Why you don't make any web application penetration test when I deploy
 a new web application (or a new feature)?"_
@@ -23,7 +23,7 @@ I collected 41 answers after advertise the poll on
 [facebook](https://www.facebook.com/armoredcode) and on
 [twitter](https://twitter.com/armoredcode).
 
-I asked also the [Italian Ruby mailinglist](http://lists.ruby-it.org/mailman/listinfo/ml) 
+I asked also the [Italian Ruby mailinglist](http://lists.ruby-it.org/mailman/listinfo/ml)
 that is full of great ruby specialist, startuppers and makers.
 
 Let's analyse the results
@@ -38,7 +38,7 @@ happy in being contradicted) the percentage of people applying security tests
 to web code is **poor**.
 
 Sorry to be so dramatic, but it's quite true that most of people in small and
-medium business don't care about security (or test overall).  
+medium business don't care about security (or test overall).
 
 People in large business... well, they don't care too but this poll wasn't
 answered by those kind of guys.
@@ -92,51 +92,36 @@ useful anymore isn't it?!?
 
 ![]({{site.url}}/images/do_you_test_for_security_poll_results.png)
 
-## Other answers 
+## Other answers
 
 On the poll there was also an open answer box where people can leave their own
 answer if non of the above fitted.
 
-{% blockquote %}
-No the application is deployed on Windows Server which is already secure
-{% endblockquote %}
+> No the application is deployed on Windows Server which is already secure
 
-{% blockquote %}
-Our managers don't care about that... sigh.
-{% endblockquote %}
+> Our managers don't care about that... sigh.
 
-{% blockquote %}
-I approach security from the development side (static analysis, code reviews
-etc) and don't expect later pentests lead by the same dev team to improve
-security, but I do run automated tools which have proved useless over time.
-{% endblockquote %}
+> I approach security from the development side (static analysis, code reviews
+> etc) and don't expect later pentests lead by the same dev team to improve
+> security, but I do run automated tools which have proved useless over time.
 
-{% blockquote %}
-I don't have enough time and money to invest in these. Is it possible to automate them?
-{% endblockquote %}
+> I don't have enough time and money to invest in these. Is it possible to automate them?
 
-{% blockquote %}
-It's a mix of "No time."/"No Budget" and another one you've not specified: "No
-knowledge" :-) Usually, we don't have the necessary knowledge to perform an
-efficient pen test session and in order to obtain that knowledge we should
-invest a too high amount of time. I know it's a vicious circle that in the long
-run doesn't pay very well :-)
-{% endblockquote %}
+> It's a mix of "No time."/"No Budget" and another one you've not specified: "No
+> knowledge" :-) Usually, we don't have the necessary knowledge to perform an
+> efficient pen test session and in order to obtain that knowledge we should
+> invest a too high amount of time. I know it's a vicious circle that in the long
+> run doesn't pay very well :-)
 
-{% blockquote %}
-No time. We are missing our deadlines. We don't have time to spent in security
-tests. We know what pentest is but we consciously decide to skip it. And pray
-that no skilled hacker will ever turn his eyes to us.
-{% endblockquote %}
+> No time. We are missing our deadlines. We don't have time to spent in security
+> tests. We know what pentest is but we consciously decide to skip it. And pray
+> that no skilled hacker will ever turn his eyes to us.
 
-{% blockquote %}
-I wouldn't know how to perform penetration tests. But I would like to know more about them.
-{% endblockquote %}
+> I wouldn't know how to perform penetration tests. But I would like to know more about them.
 
 ## My comments
 
 Looking at the poll results I can see a good number of people (24%) that they
-run application security tests (their own or asking a freelance to do that).
 So, as average 2 out of 10 web applications out there are tested for security.
 
 Other 8 out of 10 are not tested for security issues and the main reason is
@@ -188,4 +173,3 @@ And you? What do you think about this topic? Which are your experience?
 Do you make web application penetration test when you deploy a new web application or a new functionality?
 
 If not, why you don't introduce application security in your daily workflow? Tell me yours.
-

@@ -9,7 +9,7 @@ tags: awareness railsberry2013 talk survey builders appsec
 thumb: hostile.png
 level:
 hn: https://news.ycombinator.com/item?id=5360998
-rd: 
+rd:
 ---
 
 With a colleague we were wondering about how much difficult is to create an
@@ -30,7 +30,7 @@ servers' configuration is focused on security.
 
 Fact: small teams (startups, small web agencies) actually do have developers
 super stars. Some of them knows something about appsec but the time and the
-market are their enemies. No time and no budget for security tests. 
+market are their enemies. No time and no budget for security tests.
 
 Fact: large teams (corporate) may have some skilled developers. Security is
 seen as _yet another compliance and boring test we are supposed to pass_. _If
@@ -87,14 +87,12 @@ During this period you will:
   impositions
 * meet developers and train them about secure coding and about new attacks
 
-It's impossible to complete this task without any programming background. 
+It's impossible to complete this task without any programming background.
 
-{% blockquote %}
-You can't make code reviews or saying what's wrong in other people code unless
-you wrote code yourself as well. Every application security specialist must
-write code and have worked with strict deadlines in order to understand how to
-talk to developers.
-{% endblockquote %}
+> You can't make code reviews or saying what's wrong in other people code unless
+> you wrote code yourself as well. Every application security specialist must
+> write code and have worked with strict deadlines in order to understand how to
+> talk to developers.
 
 Look at this very basic C snippet of code.
 
@@ -159,7 +157,7 @@ yourself not to laugh so hard._
 I need your voice now... I create a
 [survey](http://www.surveymonkey.com/s/8RG523F) to ask people their position
 about web application penetration test. I will use as slide number 2 or 3 in my
-upcoming [Railsberry 2013 talk](http://www.railsberry.com). 
+upcoming [Railsberry 2013 talk](http://www.railsberry.com).
 
 Q: _Why you don't make any web application penetration test when I deploy a new
 web application (or a new feature)?_

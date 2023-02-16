@@ -8,14 +8,14 @@ featured: false
 tags: builders jsp ruby sake code-review sast codesake application-security appsec
 thumb: sake.png
 level:
-hn: 
-rd: 
+hn:
+rd:
 ---
 
 Two weeks ago, I [posted an article](http://armoredcode.com/blog/driven-by-real-world-task-code-reviewing-jsp-using-regular-expression/)
 about a real world source code security review. Using regular expressions I was
-able to spot interesting things over JSP files I was reviewing. 
-Client was happy. 
+able to spot interesting things over JSP files I was reviewing.
+Client was happy.
 My workflow was smooth.
 
 And codesake engine has a great part of it.
@@ -123,7 +123,7 @@ module Codesake
     end
   end
 end
-``` 
+```
 
 The kernel is called by the binary script that asks it to choose the correct engine for a given target.
 
@@ -151,7 +151,7 @@ cli.targets.each do |target|
   end
 end
 
-``` 
+```
 
 ### Working on a new feature
 
@@ -187,9 +187,9 @@ describe Codesake::Engine::Jsp do
   it "analyses a jsp file for cookies" do
    expected_result = [{:line=>51, :name=>"name", :value=>"a_value", :var=>"c"}, {:line=>52, :name=>"second", :value=>"12", :var=>"cc"}]
    @jsp.cookies.should == expected_result
- end 
+ end
 end
-``` 
+```
 
 Tests for Codesake::Engine::Jsp include some common ground routines for file
 handling and text grabbing that are included in external modules and that are
@@ -220,7 +220,7 @@ Feature: codesake process a jsp page
 
   Scenario: codesake processing the file finds cookies that are created by the page
     Given the jsp file "/tmp/existing.jsp" with cookies does exist
-    When I successfully run `bundle exec codesake /tmp/existing.jsp` 
+    When I successfully run `bundle exec codesake /tmp/existing.jsp`
     Then the stdout should contain "cookie \"name\" found with value: \"a_value\" (/tmp/existing.jsp@51)"
     And the stdout should contain "cookie \"second\" found with value: \"12\" (/tmp/existing.jsp@52)"
 ```
@@ -248,17 +248,15 @@ module Codesake
 
       attr_reader :cookies
       ...
-``` 
+```
 
 To solve this turning the spec green, we have to implement the find\_cookies
 routine matching with regular expressions the Java statements creating a
 Cookie.
 
-{% blockquote %}
-This show also how this approach can fail. If the regular expression is poorly
-written codesake won't be able to detect pattern and then you may miss some
-findings.
-{% endblockquote %}
+> This show also how this approach can fail. If the regular expression is poorly
+> written codesake won't be able to detect pattern and then you may miss some
+> findings.
 
 
 ``` ruby Codesake::Engine::Jsp.find_cookies
@@ -279,7 +277,7 @@ def find_cookies
   end
   ret
 end
-``` 
+```
 
 Assign find\_cookies values to cookies attribute will make our test to succeed.
 A regex improvement that it is underway is to skip whitespaces in some Java
@@ -302,13 +300,13 @@ def analyse
 
   ...
     @cookies.each do |c|
-      ret << "cookie \"#{c[:name]}\" found with value: \"#{c[:value]}\" (#{@filename}@#{c[:line]})" 
+      ret << "cookie \"#{c[:name]}\" found with value: \"#{c[:value]}\" (#{@filename}@#{c[:line]})"
     end
 
-     
+
     ret
   end
-``` 
+```
 
 Now everything is green. We implemented our cookies scan functionality, if a
 JSP file will create a Cookie for us we can detect it and see if we have to be

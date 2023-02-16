@@ -6,8 +6,8 @@ comments: true
 published: true
 featured: false
 tags: ruby cross builders tdd aliasing attribute appsec-in-august sea vacation
-hn: 
-rd: 
+hn:
+rd:
 thumb: sea.jpg
 ---
 
@@ -28,9 +28,9 @@ parameter to inject. This is very limiting.
 Using [Owasp WebGoat](http://code.google.com/p/webgoat/) as example, from a url obtained with an auxiliary parser,
 starting from an url like the following:
 
-``` 
+```
 http://localhost:8080/WebGoat/attack?Screen=130&menu=900
-``` 
+```
 
 I would like to be able to say cross to inject attack vettors only on _Screen_
 parameter leaving the other untouched.
@@ -114,7 +114,7 @@ the original class implementation).
 ``` ruby Cross::Url class
 module Cross
   class Url
-    
+
     attr_reader :url
     attr_reader :base_url
     attr_reader :params
@@ -142,7 +142,7 @@ module Cross
       set(name, value)
       "#{@base_url}?#{params_to_url}"
     end
-    
+
     def get(name)
       value = nil
       @params.each do |p|
@@ -165,7 +165,7 @@ module Cross
       ret = ""
       @params.each do |p|
         ret += "#{p[:name]}=#{p[:value]}"
-        if !(p == @params.last) 
+        if !(p == @params.last)
           ret +="&"
         end
       end
@@ -182,7 +182,7 @@ Running the specs, results disappointed me.
 ![]({{site.url}}/images/alias_spec_fail.png)
 
 It seemed to me I was encountering an alias bug for the @original_params class
-attribute. 
+attribute.
 
 What I was looking for was to save the original parameter values in an Array I
 eventually can use again to replay the original request.
@@ -215,11 +215,9 @@ def initialize(url)
   @original_params = @params.dup
   @original_params.freeze
 end
-``` 
+```
 
-{% blockquote %}
-In Ruby, a variable is simply a reference to an object.
-{% endblockquote %}
+> In Ruby, a variable is simply a reference to an object.
 
 ## Making the right clone
 
@@ -244,7 +242,7 @@ def initialize(url)
   end
   @original_params.freeze
 end
-``` 
+```
 
 ![]({{site.url}}/images/alias_spec_green.png)
 
@@ -279,5 +277,4 @@ Cross::Attack::XSS.each do |pattern|
     end
   end
 end
-``` 
-
+```

@@ -8,15 +8,15 @@ featured: false
 tags: birthday rails ruby-on-rails tenderlove builders breakers xss cve-2013-1855 cve-2013-1857
 thumb: cake.png
 level:
-hn: 
-rd: 
+hn:
+rd:
 ---
 
 It was [a year ago](http://armoredcode.com/blog/hello-world/) when I started
 the [armoredcode.com](http://armoredcode.com) project.
 
 The goal, it's useful to recall it, is to talk to developers about application
-security. And this evening there are three new security advisories for 
+security. And this evening there are three new security advisories for
 [the Ruby on Rails MVC framework](http://rubyonrails.org).
 
 <!-- more -->
@@ -92,15 +92,13 @@ It's one of the widespread security vulnerabilities affecting web applications
 nowadays. For the [Owasp project](http://www.owasp.org) is one of the most
 prevalent security risks for enterprises, in the 2010 it was the second item in
 their Top 10 and in the 2013 it's going to be third in this security risks
-standing. 
+standing.
 
 It looses a place but it's far from being mitigated.
 
-{% blockquote %} 
-The idea behind cross site scripting it's easy. A web application is vulnerable
-if it takes an input (either from a web form or from HTTP request) and it uses
-it without proper validation or escape.
-{% endblockquote %}
+> The idea behind cross site scripting it's easy. A web application is vulnerable
+> if it takes an input (either from a web form or from HTTP request) and it uses
+> it without proper validation or escape.
 
 There are three different type of cross site scripting (aka XSS) attacks:
 
@@ -120,33 +118,33 @@ Of course this application is far from being something to be used in production
 but it can be used to exploit a reflected XSS.
 
 ``` ruby a vulnerable Hello World Sinatra application
-require 'sinatra' 
+require 'sinatra'
 
 get '/' do
   @name = params[:name]
-  erb :index 
+  erb :index
 end
 
 __END__
 
-@@index 
+@@index
 
 <!DOCTYPE html>
 
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>XSS test</title> 
+    <title>XSS test</title>
   </head>
-  <body> 
+  <body>
     <h1>Worked!</h1>
     <p>
       Hello <%= @name %>
     </p>
-  </body> 
+  </body>
 </html>
 
-``` 
+```
 
 Using with a regular string, this is the output we expect.
 ![]({{site.url}}/images/reflected_xss_notaint.png)
@@ -159,12 +157,12 @@ development) if the name parameter is filled with this piece of js
 then the resulting HTML will be
 
 ``` html resulting body snippet
-  <body> 
+  <body>
     <h1>Worked!</h1>
     <p>
       Hello <script>alert('xss')</script>
     </p>
-  </body> 
+  </body>
 ```
 
 Browser doesn't know it should receive a user name with an hello message. It
@@ -179,7 +177,7 @@ scripting, look at this scenario:
 * an attacker designs a well crafted phishing email exploiting the XSS in a
   email link
 * the attack pattern is a redirect to an attacker controlled website with a web
-  page reading all cookies 
+  page reading all cookies
 * the user is redirected back to the vulnerable web site
 
 ``` javascript a cookie reading function
@@ -197,9 +195,9 @@ function get_cookies_array() {
     }
 
     return cookies;
-   
+
 }
-``` 
+```
 
 ### Stored cross site scripting
 
@@ -212,7 +210,7 @@ this:
 * a web application exposes a page for user feedback with a textarea html
   element in it
 * web application saves users' feedback in the database without filtering or
-  sanitize them 
+  sanitize them
 * an internal web application read that database for datamining activities
 
 It was possible to submit, as fake feedback, a cross site scripting pattern
@@ -220,7 +218,7 @@ attack that is eventually stored in the database. When the second web
 application (that is not Internet exposed) reads that database trying to build
 a table with users' feedback, the pattern is used and the attack exploited.
 
-That's a stored cross site scripting in brief. 
+That's a stored cross site scripting in brief.
 
 ### DOM Based cross site scripting
 

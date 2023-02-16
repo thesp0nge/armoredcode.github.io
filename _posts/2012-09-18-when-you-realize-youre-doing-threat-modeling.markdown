@@ -6,8 +6,8 @@ comments: true
 published: true
 featured: false
 tags: builders wapt appsec threat-model threat questionnaire
-hn: 
-rd: 
+hn:
+rd:
 thumb: t-model.jpg
 ---
 Yesterday I was in a meeting for an appsec activity about a legacy PHP web
@@ -52,10 +52,8 @@ verb you must use to invoke them. The idea is that with this information you
 can start testing for unexpected conditions making sure the APIs is robust and
 consistent and that it gracefully manage errors or out of bounds parameters.
 
-{% blockquote %}
-You must enumerate all the possible entry points in your web application in
-order to evaluate where a possible attacker can coming from.
-{% endblockquote %}
+> You must enumerate all the possible entry points in your web application in
+> order to evaluate where a possible attacker can coming from.
 
 In yesterday's scenario it was clear after the informal meetup that some of the
 tests I had in mind were completely pointless and instead I discovered new

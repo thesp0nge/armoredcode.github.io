@@ -5,11 +5,11 @@ date: 2014-01-24 08:01
 comments: true
 published: true
 featured: false
-tags: builders breakers c appsec discussion bug testing tdd owasp 
+tags: builders breakers c appsec discussion bug testing tdd owasp
 thumb: cowboy.png
 level:
-hn: 
-rd: 
+hn:
+rd:
 ---
 
 It was a busy month. Web sites out there are still attacked by villains and the
@@ -19,9 +19,7 @@ major release was out this week. That's because I didn't post anything since
 last December.
 
 Today, I want to share a consideration coming out from a discussion I had a couple of days ago:
-{% blockquote %}
-Bugs are by definition security issues.
-{% endblockquote %}
+> Bugs are by definition security issues.
 
 Do you agree with that? I don't, and let's see why.
 
@@ -51,17 +49,15 @@ Again, it's useless to tell a development team leader (who have strict and
 sometimes nonsense deadlines from the management), for a Ruby on Rails or .NET
 web application:
 
-{% blockquote %}
-This is my _OWASP or something else_ compliant report that tells that your code is suffering from Cross Site Scriting.
-Attached there is a Java snippet of code telling how to safetly deal with your code.
-Please fix it.
-{% endblockquote %}
+> This is my _OWASP or something else_ compliant report that tells that your code is suffering from Cross Site Scriting.
+> Attached there is a Java snippet of code telling how to safetly deal with your code.
+> Please fix it.
 
 This is **nonsense** for a couple of reason:
 
 * you (appsec guy) didn't use the same programming language the vulnerable web
   application is written to. It's like explaining using Spanish, that a French
-  person are using phrasal verbs the wrong way. 
+  person are using phrasal verbs the wrong way.
 * you (appsec guy) just copy cat an example but safe snippet of code taken from
   who knows where, pretending a team of developers to understand it and putting
   that code in their context the right way. This is completly a wrong approach

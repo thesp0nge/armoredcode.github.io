@@ -7,8 +7,8 @@ published: true
 featured: false
 tags: builders ruby tdd bdd email pony gem rubygem empty-body
 thumb:
-hn: 
-rd: 
+hn:
+rd:
 ---
 
 There were an annoying bug affecting the internal application security self
@@ -29,7 +29,7 @@ def send(options={})
   return ret if ENV['RACK_ENV'] == 'development'
 
    begin
-    Pony.mail(:to=>self.to, :from=>"engage@mycompanydomain", :cc=>self.cc, :subject=>self.subject, :body=>self.body, :html_body=>self.html_body) 
+    Pony.mail(:to=>self.to, :from=>"engage@mycompanydomain", :cc=>self.cc, :subject=>self.subject, :body=>self.body, :html_body=>self.html_body)
     self.sent=true
    rescue => e
      puts e.message
@@ -38,7 +38,7 @@ def send(options={})
    end
   self.save
 end
-``` 
+```
 
 I don't want to send emails while I'm developing so I made the method to fast
 exit if we're not in production or testing stage.
@@ -62,13 +62,11 @@ it 'are sent to helpdesk in order to create a working queue' do
 
   notification.sent.should  be_true
 end
-``` 
+```
 
-{% blockquote %}
-Be wise, when something doesn't run the way you expected and you double check
-your code and your tests, look at the third party libraries source, often you
-will find there the answer.
-{% endblockquote %}
+> Be wise, when something doesn't run the way you expected and you double check
+> your code and your tests, look at the third party libraries source, often you
+> will find there the answer.
 
 From this point everything went well. All tests passed and no problems at all
 were reported.
@@ -91,7 +89,7 @@ if options[:html_body]
     body options[:html_body]
   end
 end
-``` 
+```
 
 Mhm. It seems I found what I was looking for. If I pass to pony a non nil
 html_body (actually I was passing an empty string), pony will overwrite the
@@ -115,11 +113,10 @@ def send(options={})
    end
   self.save
 end
-``` 
+```
 
 When something doesn't run the way you expected and you double check
 your code and your tests, look at the third party libraries source, often you
 will find there the answer.
 
 Enjoy it!
-

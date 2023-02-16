@@ -8,8 +8,8 @@ featured: false
 tags: appsec code-review sast static-analysis project-managers it-managers quote quotation 37signals myth forecast
 thumb: planning.png
 level:
-hn: 
-rd: 
+hn:
+rd:
 ---
 
 A premise: I don't trust gantt and fancy IT project managers' document where
@@ -25,12 +25,10 @@ the job done you are just shooting a number.
 In their best seller [http://37signals.com/rework]("Rework"), guys from
 37signals do have strong opinion about plans and project timing.
 
-{% blockquote Rework, Jason Fried & David Heinemeier Hansson %}
-Unless you’re a fortune-teller, long-term business planning is a fantasy. There
-are just too many factors that are out of your hands: market conditions,
-competitors, customers, the economy, etc. Writing a plan makes you feel in
-control of things you can’t actually control.
-{% endblockquote %}
+> Unless you’re a fortune-teller, long-term business planning is a fantasy. There
+> are just too many factors that are out of your hands: market conditions,
+> competitors, customers, the economy, etc. Writing a plan makes you feel in
+> control of things you can’t actually control.
 
 Of course you need to have your project well organized with a sequence of
 actions you have to deal with but you need also a lot of information to make
@@ -47,7 +45,7 @@ to tune them in order to fit your needs.
 
 The overall quote in terms of days relies on a key ratio that it's completely
 up to the application security specialist. It depends his seniority and how
-many code reviews he did. 
+many code reviews he did.
 
 This values is the lines of code you can review on average (no matter how) in a
 day.
@@ -93,7 +91,7 @@ workout gathering some preliminary information?
   <tbody>
     <tr><td>Yes</td><td>+2 points</td></tr>
     <tr><td>No</td><td>-2 points</td></tr>
-    
+
   </tbody>
 </table>
 
@@ -158,7 +156,7 @@ well organized? Do you feel under pressure?
     <tr><td>I'm kind a of organized. I'm quite but sometimes I miss some milestone due to high amount of work</td><td>+2 points</td></tr>
     <tr><td>I'll do a lot of freelancing those days / I've got a lot of family stuff to do</td><td>-2 points</td></tr>
     <tr><td>It will be a mess, I'll experience a very hard workload but I can do it... I hope</td><td>-5 points</td></tr>
-    
+
   </tbody>
 </table>
 

@@ -5,7 +5,7 @@ date: 2012-10-23 09:10
 comments: true
 published: true
 featured: false
-tags: breakers ruby opensource hacking h4f wordpress wpscan basic-authentication http 
+tags: breakers ruby opensource hacking h4f wordpress wpscan basic-authentication http
 thumb: wp-pumpkin.jpg
 hn: http://news.ycombinator.com/item?id=4686955
 rd: http://redd.it/11xoo1
@@ -30,11 +30,11 @@ mainstream, then you can eventually use your own fork (using
 
 ## A bit of theory
 
-When a web resource is protected by basic authentication, the server answers with a 401 HTTP status code that it means **Non authorized** and with a **WWW-Authenticate** HTTP header specifying the authentication method it supports. 
+When a web resource is protected by basic authentication, the server answers with a 401 HTTP status code that it means **Non authorized** and with a **WWW-Authenticate** HTTP header specifying the authentication method it supports.
 
 In the case of basic authentication you will see something like
 
-``` 
+```
 WWW-Authenticate: Basic realm="My great protected resource"
 ```
 
@@ -45,25 +45,23 @@ password.
 
 The aforementioned string is encoded using Base64 encoding function and sent to the server in an **Authorization** HTTP field.
 
-``` 
+```
 Authorization: dGVzdDphcGFzc3dvcmQ= # => the username is test and the password is "apassword"
 ```
 
 Then the server reverts the Base64 encoding making the credentials in a clear form and then it double checks with something stored in its filesystem.
 
-{% blockquote %}
-Base64 it is not an hashing function to protect web resources with a fair
-enough security level. Base64 must not used in any case as alternative to a
-password mechanism because it can be reverted in a clear text form with a
-single line of code. 
-{% endblockquote %}
+> Base64 it is not an hashing function to protect web resources with a fair
+> enough security level. Base64 must not used in any case as alternative to a
+> password mechanism because it can be reverted in a clear text form with a
+> single line of code.
 
 As you can see, your secrets are not secured using Base64 encoding.
 
-``` ruby 
+``` ruby
 1.9.3p194 :003 > Base64.decode64("dGVzdDphcGFzc3dvcmQ=")
- => "test:apassword" 
-1.9.3p194 :004 > 
+ => "test:apassword"
+1.9.3p194 :004 >
 ```
 
 ## And a very bit of reality
@@ -92,7 +90,7 @@ can be a further improvement in my repository fork.
 
 I'll show git diff output command between the clean master and a branch I
 created to add the basic authentication support. I like most working on a
-separate branch following the workout described in 
+separate branch following the workout described in
 [this blog post](http://nvie.com/posts/a-successful-git-branching-model/)
 
 ### Let wpscan to understand the server needs credentials
@@ -100,13 +98,13 @@ separate branch following the workout described in
 First step, wpscan has a list of valid HTTP response code it can manage. We
 have to say it that also 401 is a response code it can handle.
 
-``` 
+```
 diff --git a/lib/wpscan/wp_target.rb b/lib/wpscan/wp_target.rb
 index 59fa5a6..a3c335a 100644
 --- a/lib/wpscan/wp_target.rb
 +++ b/lib/wpscan/wp_target.rb
 @@ -35,6 +35,7 @@ class WpTarget
- 
+
    def initialize(target_url, options = {})
      @uri            = URI.parse(add_trailing_slash(add_http_protocol(target_url)))
 +    @basic_auth     = options[:basic_auth]
@@ -114,15 +112,15 @@ index 59fa5a6..a3c335a 100644
      @wp_content_dir = options[:wp_content_dir]
      @wp_plugins_dir = options[:wp_plugins_dir]
 @@ -74,7 +75,7 @@ class WpTarget
- 
+
    # Valid HTTP return codes
    def self.valid_response_codes
 -    [200, 403, 301, 302, 500]
 +    [200, 401, 403, 301, 302, 500]
    end
- 
+
    # return WpTheme
-``` 
+```
 
 Of course we will add a variable holding basic authentication parameter value
 if it has been found. So it can be passed to inner methods.
@@ -139,7 +137,7 @@ Please note that we make also the encoding at this stage so that
 options[:basic_auth] will hold (after it has been processed) the string we have
 to put in the Authorization HTTP header as response.
 
-``` 
+```
 diff --git a/lib/wpscan/wpscan_options.rb b/lib/wpscan/wpscan_options.rb
 index 34942ca..5a28082 100644
 --- a/lib/wpscan/wpscan_options.rb
@@ -152,12 +150,12 @@ index 34942ca..5a28082 100644
 +      :config_file,
 +      :basic_auth
    ]
- 
+
    attr_accessor *ACCESSOR_OPTIONS
 @@ -48,6 +49,12 @@ class WpscanOptions
- 
+
    end
- 
+
 +  def basic_auth=(basic_auth)
 +    raise "Invalid basic authentication credentials" if basic_auth.index(':').nil?
 +    @basic_auth="Basic #{Base64.encode64(basic_auth).chomp}="
@@ -166,7 +164,7 @@ index 34942ca..5a28082 100644
 +
    def url=(url)
      raise "Empty URL given" if !url
- 
+
 @@ -201,7 +208,8 @@ class WpscanOptions
          ["--follow-redirection", GetoptLong::NO_ARGUMENT],
          ["--wp-content-dir", GetoptLong::REQUIRED_ARGUMENT],
@@ -176,7 +174,7 @@ index 34942ca..5a28082 100644
 +        ["--basic-auth", "-b", GetoptLong::REQUIRED_ARGUMENT]
      )
    end
-``` 
+```
 
 ### Make wpscan to raise error if 401 is received and no credentials passed
 
@@ -186,7 +184,7 @@ credentials to be used.
 
 Next time you have to use newly provided '-b' flag baby.
 
-``` 
+```
 diff --git a/wpscan.rb b/wpscan.rb
 index 822daf2..f73a2fe 100755
 --- a/wpscan.rb
@@ -194,7 +192,7 @@ index 822daf2..f73a2fe 100755
 @@ -53,6 +53,10 @@ begin
      raise "The WordPress URL supplied '#{wp_target.uri}' seems to be down."
    end
- 
+
 +  if wp_target.has_basic_auth?
 +    raise "The WordPress URL supplied '#{wp_target.uri}' seems to be protected with basic auth." unless wpscan_options.basic_auth
 +  end
@@ -202,7 +200,7 @@ index 822daf2..f73a2fe 100755
    redirection = wp_target.redirection
    if redirection
      if wpscan_options.follow_redirection
-``` 
+```
 
 The helper method has_basic_auth? is defined in the web_site module in a very
 simple code. If target answered 401 then it has been protected by basic auth
@@ -218,7 +216,7 @@ endoded credentials.
 wpscan browser module uses Typhoeus::Hydra to make HTTP requests. Hopefully
 this third party framework allows us to hack response parameters very easily.
 
-``` 
+```
 diff --git a/lib/browser.rb b/lib/browser.rb
 index 9daae9b..675ed3f 100644
 --- a/lib/browser.rb
@@ -228,13 +226,13 @@ index 9daae9b..675ed3f 100644
      @config_file = options[:config_file] || CONF_DIR + '/browser.conf.json'
      options.delete(:config_file)
 +    @basic_auth = options[:basic_auth]
- 
+
      load_config()
- 
+
 @@ -151,6 +152,17 @@ class Browser
        params = params.merge(:proxy => @proxy)
      end
- 
+
 +    if @basic_auth
 +
 +      if !params.has_key?(:headers)
@@ -249,7 +247,7 @@ index 9daae9b..675ed3f 100644
      unless params.has_key?(:disable_ssl_host_verification)
        params = params.merge(:disable_ssl_host_verification => true)
      end
-``` 
+```
 
 ## Wrap up
 
@@ -257,9 +255,9 @@ Now my own wpscan fork has a '-b' flag that it can be used in the command line
 to specify username and password to enter basic authentication protected
 wordpress installations.
 
-``` 
+```
 $ ruby ./wpscan.rb -b test:apassword -u http://wp.test.blog
-``` 
+```
 
 If you don't use the username:password form, the code will complain about the
 credentials format and raising a runtime error stopping execution.

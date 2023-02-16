@@ -6,8 +6,8 @@ comments: true
 published: true
 featured: false
 tags: world builders breakers fun
-hn: 
-rd: 
+hn:
+rd:
 ---
 
 The work as application security specialit is to tell people how to improve
@@ -20,7 +20,7 @@ respect, scary and hate when they receive your email.
 
 People don't want to hear that they are good enough in doing something. Even
 this applies in a field outside their prophecies, they are rockstars and you a
-bad guy trying to piss them off. 
+bad guy trying to piss them off.
 
 People have their own perception about security:
 
@@ -40,10 +40,8 @@ As a psychological point of view it's interesting in seeing that someone tell
 me not doing my job because they don't want to read reports that it will bring
 them more mitigation activity.
 
-{% blockquote %}
-It's either important to know that to me it's important to have a risky
-indicator about that server or that application.
-{% endblockquote %}
+> It's either important to know that to me it's important to have a risky
+> indicator about that server or that application.
 
 Sometimes it happen that a web application is crappy and completely bad
 designed. It suffered almost all risks scored in the Owasp Top 10 but
@@ -52,7 +50,7 @@ remediating is almost impossible.
 **It would cost too much**
 
 And they say this to me as I reported them the useless modifications in the
-world. 
+world.
 
 I don't think we, as application security guys, can breach **all** people in
 the Information Technology. Moreover we can't breach people they have more
@@ -65,7 +63,7 @@ They just stopped listening when you say _"some mitigation steps are
 necessary"_.
 
 You don't have to take this as a personal offense, just carry on you must
-understand their needs and try to make a tradeoff with your security needs. 
+understand their needs and try to make a tradeoff with your security needs.
 
 It's not a job when everything is black or white, you have to use all the
 possible greyscale combination if you want to reach most of your developer or

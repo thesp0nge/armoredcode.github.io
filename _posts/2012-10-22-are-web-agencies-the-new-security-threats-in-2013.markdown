@@ -5,10 +5,10 @@ date: 2012-10-22 07:50
 comments: true
 published: true
 featured: false
-tags: builders outsourcing web-agency appsec ssdlc 
+tags: builders outsourcing web-agency appsec ssdlc
 thumb: web-agency.jpg
-hn: 
-rd: 
+hn:
+rd:
 ---
 
 An economical crisis time has been started 4 years ago and this eventually
@@ -25,14 +25,12 @@ technical people credentials were disclosed on [hackernews](http://news.thehacke
 The breach was found in a secondary website that was lying almost forgotten in
 the cyberspace.
 Disclosed credentials were eventually still valid since the website was no more
-update but it was still used. 
+update but it was still used.
 
-{% blockquote %}
-Clueless manager would say he's going not to pay someone to update an old
-crappy code because a full migration project will drive too much money away
-from real core business. Most of time, real core business is communication
-those days.
-{% endblockquote %}
+> Clueless manager would say he's going not to pay someone to update an old
+> crappy code because a full migration project will drive too much money away
+> from real core business. Most of time, real core business is communication
+> those days.
 
 True to be told investing a large percentage of money in communication and
 marketing it makes sense but not applying a vulnerability management policy
@@ -52,7 +50,7 @@ You need to develop a secondary website eventually with some sort of HTML
 forms, let's say for search for website contents and for keep in touch with
 your business.
 
-In the [very beginning of this blog](http://armoredcode.com/blog/understanding-your-attack-exposure/) 
+In the [very beginning of this blog](http://armoredcode.com/blog/understanding-your-attack-exposure/)
 we discuss about the web forms as part of your website attack surface. You hit
 the point, having a non full static website, makes you vulnerable to web driven
 attacks.
@@ -95,7 +93,7 @@ So, when you sign the contract you give the following to your webagency:
   contractor will use. If you don't have such a guideline, you **do** need to
   engage a security contractor to write you one.
 * a copy of hardening guidelines for operating system, database server,
-  application server. You can refer to [standard guidelines](http://www.cisecurity.org/) 
+  application server. You can refer to [standard guidelines](http://www.cisecurity.org/)
   but eventually it's a good idea develop something custom in your IT.
 
 ## What to ask to your webagency

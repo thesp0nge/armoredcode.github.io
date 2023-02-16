@@ -12,7 +12,7 @@ thumb: kaboom.png
 ---
 
 Bugs? They happen. No one on Earth is smart enough to write a 100% bug free
-piece of code. 
+piece of code.
 No matter how good are you, you're users still will try use your forms in an
 unpredictable ways making your app to miserably fail.
 
@@ -23,7 +23,7 @@ an #appsec specialist.
 
 ## The short one
 
-Just to make internal application security workflow leaner, I wrote a [padrino powered](http://www.padrinorb.com) 
+Just to make internal application security workflow leaner, I wrote a [padrino powered](http://www.padrinorb.com)
 web application to help people in asking security assessments for servers and
 web applications.
 
@@ -49,10 +49,8 @@ first and only email it was disclosed.
 But I wanted to draw something elegant... that's why I investigated further in
 how to control the exception stacktracing in a rack application.
 
-{% blockquote %}
-Bugs, even serious security bugs can occur either in a piece of code wrote by
-an #appsec specialist.
-{% endblockquote %}
+> Bugs, even serious security bugs can occur either in a piece of code wrote by
+> an #appsec specialist.
 
 ## The problem
 
@@ -73,7 +71,7 @@ error 500 do
     html_body= $showExceptions.pretty(env, @error)
     # mail the error
 end
-``` 
+```
 
 In the template the following piece of HTML is executed:
 ``` html
@@ -88,14 +86,14 @@ In the template the following piece of HTML is executed:
 Every parameter in the POST it is rendered in the resulting page, even the login password.
 True to be told, Sinatra::ShowException class starts with the following preamble:
 
-``` ruby 
+``` ruby
 # Sinatra::ShowExceptions catches all exceptions raised from the app it
 # wraps. It shows a useful backtrace with the sourcefile and clickable
 # context, the whole Rack environment and the request data.
 #
 # Be careful when you use this on public-facing sites as it could reveal
 # information helpful to attackers.
-``` 
+```
 
 But what do you have to do if you need the stacktrace to be printed out even in
 a production environment without exposing sensitive informations?
@@ -125,13 +123,13 @@ module Sinatra
       @options=options
       super(app)
     end
-    
+
     # ...
-``` 
+```
 
 ``` ruby creating the object
 $showExceptions = Sinatra::ShowExceptions.new(self, {:keywords=>['password'], :mask_cookies=>true)
-``` 
+```
 
 The bizniz it is in the pretty method that it is called to render the exception
 message applying the ERB template.
@@ -155,7 +153,7 @@ def pretty(env, exception)
   end
   super(env, exception)
 end
-``` 
+```
 
 Using super() this way it means I recall original Rack::ShowException methods
 after masking operations. Make sure that it fits your need before copycat this

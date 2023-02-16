@@ -60,7 +60,7 @@ First of all, after the shebang, I turned on UTF-8 encoding since the source
 code can have Italian chars inside, I required
 [trimmy](https://github.com/thesp0nge/trimmy) a gem I wrote to add a trim
 method to ruby String just like PHP and rainbow gem to add a touch of color to
-the output.  
+the output.
 
 ``` ruby a rough Sake::Jsp implementation
 #!/usr/bin/env ruby
@@ -115,7 +115,7 @@ module Sake
     end
 ```
 
-I implemented only 2 public methods for Sake::Jsp. 
+I implemented only 2 public methods for Sake::Jsp.
 
 _sake\_it_ will run all the tests and it is the business logic of the whole
 scanning engine and a Sake::Jsp.is_false_positive? that check a variable in the
@@ -136,13 +136,11 @@ list of false positive values.
 
 ```
 
-{% blockquote %}
-The suspected secrets list is very prone to false positives since developers
-around the world can save passwords or other secrets in variables called _foo_,
-_goofy_, _aaa_, _fooled_ or whatever. This is the main limit of source code
-analysis: a tool cannot understand a source code, it can only give a
-probabilistic evaluation.
-{% endblockquote %}
+> The suspected secrets list is very prone to false positives since developers
+> around the world can save passwords or other secrets in variables called _foo_,
+> _goofy_, _aaa_, _fooled_ or whatever. This is the main limit of source code
+> analysis: a tool cannot understand a source code, it can only give a
+> probabilistic evaluation.
 
 Here it starts the private implementation of the engine.
 _read\_file_ is not that magic. I used the readlines routine to store all the
@@ -155,7 +153,7 @@ lines of code in an Array.
       return File.readlines(@filename) if File.exists?(@filename)
     end
 
-``` 
+```
 
 _find\_secrets\_ method takes a line of code, it splits it in tokens and then
 it loops for every returned word looking in the SUSPECTED_SECRETS Array.
@@ -173,7 +171,7 @@ first implementation.
       end
       ret
     end
-``` 
+```
 
 A typical activity I do every single time I work on a source code review, is
 drawing a mindmap of the interconnection between classes and source code files.
@@ -194,7 +192,7 @@ the page uses and eventually custom Java packages developed by internal team.
 
       ret
     end
-``` 
+```
 
 The _find\_imports\_ code can be refined in many ways. The regular expression
 here doesn't match a lot of different ways the package import clause can be
@@ -203,7 +201,7 @@ written. For sure a single space can lead the import not to be detected.
 The _find\_attack\_entrypoints_ it is more interesting. It checks all the
 possible read from the request. Remember that all the stuff coming from the
 user can be tampered ando so parameters from the HTTP request that they must be
-considered as possible attack entrypoints. 
+considered as possible attack entrypoints.
 
 A clever implementation it will consider stuff read from a POST and eventually
 other APIs that it can be used to read data in input (File, Database, ...).
@@ -227,7 +225,7 @@ other APIs that it can be used to read data in input (File, Database, ...).
       ret
     end
 
-``` 
+```
 
 The _find\_reflected\_vars\_ is the output scanning part of the engine. It
 checks all the writing the Jsp page makes as output looking for variables. Of
@@ -258,7 +256,7 @@ attention in understanding what this routine gives you as output.
 
       ret
     end
-``` 
+```
 
 Then the runtime bit it will disappear when I'll merge the engine into sake and codesake.
 
@@ -286,7 +284,7 @@ end
 jsp.results[:entrypoints].each do |res|
   puts "Variable read from request: #{res[:var]}@#{res[:line]}".color(:red)
 end
-``` 
+```
 
 ## Off by one
 
@@ -296,7 +294,7 @@ and source code assessment.
 
 From the [failing experience about Owasp Orizon](http://armoredcode.com/blog/untold-owasp-orizon-is-died-and-im-sad-of-it/)
 I understood that writing a full featured source code parser is hard and
-eventually useless. 
+eventually useless.
 
 There are so many variables that can influence the way a developer write a
 piece of code that trying to understand them is a topic I leave for a sci-fi

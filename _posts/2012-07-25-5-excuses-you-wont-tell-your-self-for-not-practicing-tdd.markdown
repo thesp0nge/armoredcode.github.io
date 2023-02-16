@@ -45,10 +45,8 @@ backend and stealing all credit card number in your shop.
 
 Your users are angry. Your customer **do** is angry. You're in trouble.
 
-{% blockquote %}
-You migth say, hey but you don't leave us enough time to test the code, we
-don't have resource, it's not our fault.
-{% endblockquote %}
+> You migth say, hey but you don't leave us enough time to test the code, we
+> don't have resource, it's not our fault.
 
 Your customer will eventually say that it is your fault. And you must fix it.
 For free.
@@ -56,12 +54,12 @@ For free.
 ### You may want to
 Talk to your customer honestly. Say her you can't bring a full featured
 ecommerce website in a couple of weeks. Say her you have to test the code in a
-staging environment for security issues she must provide you. 
+staging environment for security issues she must provide you.
 
-When she doesn't understand why the hell people should search your site for 
+When she doesn't understand why the hell people should search your site for
 ``` sql
 ' OR '1'='1
-``` 
+```
 explain that she must take care about her customers data and you want to help
 making the website robust and secure to attackers.
 
@@ -93,7 +91,7 @@ People are more keen to understand and to let real expert to drive them in a
 successfully experience rather than you expect.
 
 So write down use cases with your customer, you want to start from which is the
-expected behavior or the expected user experience from the website. 
+expected behavior or the expected user experience from the website.
 
 Make those scenarios the real contract and be paid in writing a web application
 fulfilling your costumer _desiderata_.
@@ -144,7 +142,7 @@ You know, sometimes it happens. You meet someone who knows it all and that he
 pretend to have all the answers.
 
 People like this, make all their teammate to believe their doesn't know the
-meaning of the word _fault_. 
+meaning of the word _fault_.
 
 Software has no bugs for them.
 They are not supposed to test or to review their code for security issues since
@@ -160,7 +158,7 @@ phrases without any clue about how to achieve those goals.
 ### You may want to
 If your team leader is one of those people, maybe you want to talk to him
 and... mmmh... no maybe you have to be strong and let the hurricane to pass and
-then look for another job in a smarter and more skilled team. 
+then look for another job in a smarter and more skilled team.
 
 Maybe you deserve it.
 
@@ -177,7 +175,7 @@ Never give up on talking. This is the rule.
 ## Customers suck
 Final word about customers. True to be told, this post doesn't fit any real
 world situation. There are customers who don't want to listen any words about
-testing, or security or whatever. 
+testing, or security or whatever.
 
 They pay, you commit. And you're already late also if you signed with them
 today.

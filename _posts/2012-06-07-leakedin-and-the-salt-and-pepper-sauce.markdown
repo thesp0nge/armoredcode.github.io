@@ -5,7 +5,7 @@ date: 2012-06-07 17:17
 comments: true
 published: true
 featured: false
-tags: breakers linkedin password information-leakage salt sha1 owasp 
+tags: breakers linkedin password information-leakage salt sha1 owasp
 hn: http://news.ycombinator.com/item?id=4083141
 rd: http://redd.it/ur9ag
 ---
@@ -14,7 +14,7 @@ Two days ago, the Internet was squashed by a very large sensitive data breach.
 More than 6.4M of password hashes coming from
 [LinkedIN](http://www.linkedin.com) were published by an unknown attacker crew
 exposing a large number of users to a credentials disclosure.
- 
+
 <!-- more -->
 
 ## It's the same old story
@@ -29,13 +29,12 @@ reviews since all of money must be spent for business development.
 But this is not an ideal world and a _big guy_ has been caught.
 And he reacted as all _big guys_ telling something like:
 
-{% blockquote %}
-Yes we have a problem but hey... we sent an email to all of affected users to
-change their password. Why happened? How the attacker break the site and stole
-the information?
 
-**plonk**
-{% endblockquote %} 
+> Yes we have a problem but hey... we sent an email to all of affected users to
+> change their password. Why happened? How the attacker break the site and stole
+> the information?
+>
+> **plonk**
 
 No public statement about the incident and bear in mind that LinkedIN offers also a paid subscription service.
 Is it fair not to publicly explain what's wrong happened?
@@ -51,7 +50,7 @@ I see a lot of comments in Italian forums and on some international mailing
 lists and more than 90% of people saying something was complaining about the
 missin salt.
 
-Is really this the bad programming practice to deprecate? 
+Is really this the bad programming practice to deprecate?
 
 Short answer: having the salt would help but some other bad things happened
 before.
@@ -59,7 +58,7 @@ before.
 ## The first line of defence
 
 You've got a server (more likely a cluster of servers) published on the
-Internet. You're a founded company serving tons of users and requests per day. 
+Internet. You're a founded company serving tons of users and requests per day.
 
 1. *Segregation*. Your tech team is great and **obviously** it used a 3 layers
    architecture with a frontend layer exposed on a DMZ protected eventually by
@@ -101,7 +100,7 @@ limiting if we want to suggest a way to expose a service with security in mind.
 ## The last line of defence: protect your data
 
 However, all the stuff I said before have a cost. Buying appliances hardware,
-software licences or have a skilled technical people do have a cost. 
+software licences or have a skilled technical people do have a cost.
 You have to make sure to arrange some budget and implement _something_ to
 protect the architectural perimeter.
 
@@ -116,7 +115,7 @@ without encryption just relying on HTTPS as only security feature.
 
 Using poor hashing algorithm like MD5 or SHA1 can be a solution for the
 homemade blog engine serving a website talking about kittens or cooking or
-guitar pedalboards. 
+guitar pedalboards.
 
 The starting up solution is to use SHA256 or even better SHA512 with a random salt of course.
 
@@ -129,13 +128,13 @@ File.read('/dev/urandom', 'r') do |f|
   @salt=f.read(20)
 end
 
-# Intermediate hashing the salt to have it in a some canonical way 
+# Intermediate hashing the salt to have it in a some canonical way
 # It's not an obligatory step...
 
 salt_digest = Digest::SHA256(@salt)
 
 pass_digest = Digest::SHA256(salt_digest+pass_digest)
-``` 
+```
 
 The important part of all of this is that you **must save** your salt somewhere
 in order to check a cleartext password against the stored digest.
@@ -160,7 +159,7 @@ class User < ActiveRecord::Base
     self.password_hash = @password
   end
 end
-``` 
+```
 
 Applying this to other ORMs is a trivial programming exercise.
 
@@ -174,8 +173,8 @@ Here it is:
 ``` ruby creting a digest with bcrypt
 require 'bcrypt'
 
-my_password = BCrypt::Password.create("my password") #  => "$2a$10$uwmjwR5B6JpzQ9luq7fAt.U/xpDl9c9EU/EQS8hIJQqEzEivOq3S." 
-``` 
+my_password = BCrypt::Password.create("my password") #  => "$2a$10$uwmjwR5B6JpzQ9luq7fAt.U/xpDl9c9EU/EQS8hIJQqEzEivOq3S."
+```
 
 ## End of file
 
@@ -195,11 +194,10 @@ situation when you have to make a security architectural choice.
 The worst situation is _the attacker has both digest and salt, how can I
 prevent him to reverse and break the account?_
 
-{% blockquote %}
-You must think yourself in the worst situation when you have to make a security
-architectural choice.
-{% endblockquote %}
+
+> You must think yourself in the worst situation when you have to make a security
+> architectural choice.
 
 Choosing bcrypt solves the question since it's resilient to bruteforce attacks and it's almost safe from reversing.
-Even devise [switched to bcrypt](http://groups.google.com/group/plataformatec-devise/browse_thread/thread/60b69148899ee94a?pli=1) 
+Even devise [switched to bcrypt](http://groups.google.com/group/plataformatec-devise/browse_thread/thread/60b69148899ee94a?pli=1)
 almost two years ago or something.

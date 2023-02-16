@@ -8,8 +8,8 @@ featured: false
 tags: ruby h4f hacking bot api gem rubygem codesake
 thumb: walle.png
 level:
-hn: 
-rd: 
+hn:
+rd:
 ---
 
 There are a lot of tutorials for creating bots on several programming languages
@@ -34,7 +34,7 @@ energies for working on [dawn](http://rubygems.org/gems/codesake-dawn) version
 0\.80.
 
 I googled a bit to find something already cooked but I didn't find anything
-feasible to me. 
+feasible to me.
 The only code I found was the [flamingo](https://code.google.com/p/flamingo/)
 bot and I started looking at it for inspiration.
 
@@ -69,11 +69,9 @@ That's why I started the [botolo](https://github.com/thesp0nge/botolo) project.
 Before start talking about technical details, we must define what is a bot
 designed to be run using botolo.
 
-{% blockquote %}
-A bot designed for botolo engine is a ruby file with all bot tasks
-implementation and a YAML configuration file. In the YAML configuration file
-there is the tasks list and their schedule.
-{% endblockquote %}
+> A bot designed for botolo engine is a ruby file with all bot tasks
+> implementation and a YAML configuration file. In the YAML configuration file
+> there is the tasks list and their schedule.
 
 Looking to venerable C programming language, you may think the YAML file is the
 .h include file defining function prototypes and the ruby file is the .c file
@@ -88,12 +86,12 @@ the configuration file there are three main parts:
   behaviour file
 * twitter: twitter secrets to be used by the bot to interact with this social
   network. As the time I'm writing this, botolo is able to run only bots
-  interacting with [twitter](https://twitter.com). 
+  interacting with [twitter](https://twitter.com).
 * task: this the list of all the routines the behaviour file must implement.
 
 Let's give a look to a basic YAML configuration file:
 
-``` 
+```
 verbose: true
 
 bot:
@@ -112,7 +110,7 @@ twitter:
 
 task:
   - { schedule: every 10 m, action: hello_world }
-``` 
+```
 
 This bot is named _mydummy-bot_, every ten minutes its task is descrived in the
 hello\_world method you can find in the behaviour file that is mydummy-bot.rb.
@@ -123,7 +121,7 @@ directory, so there is no need to specify the ruby file at command line.
 
 There is a single but **critical** rule in writing the bot behaviour. The class
 must be Botolo::Bot::Behaviour. I know, this breaks ruby naming convention if
-you named the file with your bot name. 
+you named the file with your bot name.
 
 I suggest you naming the config file with the name of your bot (and the YAML
 extension of course) and naming the behaviour file as behaviour.rb so you will
@@ -136,7 +134,7 @@ Hash parameter.
 def initialize(options={})
   # put your code here
 end
-``` 
+```
 
 Following the aforementioned rules, our dummy\_bot behaviour file is:
 
@@ -156,7 +154,7 @@ module Botolo
     end
   end
 end
-``` 
+```
 
 It's pretty simple to create a bot for the botolo engine, now let's look at the
 engine internals.
@@ -181,10 +179,10 @@ def initialize(options={})
   authenticate
   @tasks = @config['task']
 
-  behaviour = File.join(".", @config['bot']['behaviour']) unless @config['bot']['behaviour'].nil? 
+  behaviour = File.join(".", @config['bot']['behaviour']) unless @config['bot']['behaviour'].nil?
 
   $logger.helo "#{name} v#{version} is starting up"
-  
+
   begin
     load behaviour
     $logger.log "using #{behaviour} as bot behaviour"
@@ -202,7 +200,7 @@ Reading configuration is nothing but a plain YAML parsing:
 
 ``` ruby the read_conf method
 def read_conf(filename=nil)
-  return {} if filename.nil? or ! File.exist?(filename) 
+  return {} if filename.nil? or ! File.exist?(filename)
   return YAML.load_file(filename)
 end
 ```
@@ -210,7 +208,7 @@ end
 ## Botolo: the main loop
 
 Botolo engine main loop:
-* iterates each task 
+* iterates each task
 * check if the behaviour implements the action described in the YAML
   configuration and, if yes, running the action
 * going to sleep for the amount of seconds specified in the bot configuration
@@ -221,7 +219,7 @@ def run
   $logger.log "entering main loop"
   while true
     @tasks.each do |task|
-      begin 
+      begin
       @behaviour.send(task["action"].to_sym) if @behaviour.respond_to? task["action"].to_sym
       rescue => e
         $logger.err "#{task["action"]} failed (#{e.message})"
@@ -230,13 +228,13 @@ def run
     end
   end
 end
-``` 
+```
 
 ## The codesake bot
 
-[codesake-bot](https://github.com/codesake/codesake-bot) is very easy to run with botolo. 
+[codesake-bot](https://github.com/codesake/codesake-bot) is very easy to run with botolo.
 
-``` 
+```
 $ gem install botolo
 $ cd codesake-bot # where both config.yaml and codesake-bot.rb files are
 $ botolo config.yaml

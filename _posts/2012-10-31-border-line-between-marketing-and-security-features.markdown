@@ -5,7 +5,7 @@ date: 2012-11-05 09:00
 comments: true
 published: true
 featured: false
-tags: breakers cross-site-scriting owasp owasp-top-10 xss ie xss-filter marketing security-feature attack-filtering h4f casper webrick ruby 
+tags: breakers cross-site-scriting owasp owasp-top-10 xss ie xss-filter marketing security-feature attack-filtering h4f casper webrick ruby
 thumb: borderline.jpg
 level:
 hn: http://news.ycombinator.com/item?id=4742655
@@ -17,7 +17,7 @@ native anti-xss filtering facilities _(they only work for reflected cross site
 scripting)_.
 
 Firefox and Google Chrome leave attack pattern in the resulting HTML code but
-they don't render it. 
+they don't render it.
 
 Microsoft Internet Explorer uses its internal [XSS Filter](http://blogs.msdn.com/b/ie/archive/2008/07/02/ie8-security-part-iv-the-xss-filter.aspx)
 library.
@@ -38,10 +38,8 @@ right now it behaves when a XSS is exploited under your feet.
 
 Post author, Eric Lawrence, says in his post:
 
-{% blockquote %}
-Pages that have been secured against XSS via server-side logic may opt-out of
-this protection using a HTTP response header: X-XSS-Protection: 0
-{% endblockquote %}
+> Pages that have been secured against XSS via server-side logic may opt-out of
+> this protection using a HTTP response header: X-XSS-Protection: 0
 
 Wait. Is it possible to disable the filter server side just with an HTTP header in the response?
 Are you kidding at me?
@@ -86,9 +84,9 @@ class WEBrick::HTTPResponse
   def disable_ie_xss_protection
     self["X-XSS-Protection"]= 0
   end
-  
+
 end
-``` 
+```
 
 Seven lines of code counting two empty lines I added for readability purposes.
 
@@ -105,9 +103,9 @@ def initialize(config={})
 
   config[:Port] = 8080 if ! config[:Port]
   config[:AccessLog] = []
-  config[:ProxyContentHandler] = Proc.new do |req, res| 
+  config[:ProxyContentHandler] = Proc.new do |req, res|
     res.disable_ie_xss_protection if config[:disable_ie_xss_protection]
-    log_requests(req, res) 
+    log_requests(req, res)
   end
 
   super(config)
@@ -129,15 +127,15 @@ opts = GetoptLong.new(
 
 opts.each do |opt, arg|
   case opt
-  
+
   ...
-  
+
   when '--disable_ie_xss_protection'
     options[:disable_ie_xss_protection] = true
   end
 end
 
-``` 
+```
 
 ## Off by one
 
@@ -166,4 +164,4 @@ If you want to read more about Cross Site Scripting, I suggest you to go to
 
 Enjoy it!
 
-_Borderline image credits to [Lynne Hand](http://www.flickr.com/photos/your_teacher/2595182363/)_  
+_Borderline image credits to [Lynne Hand](http://www.flickr.com/photos/your_teacher/2595182363/)_

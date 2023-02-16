@@ -47,7 +47,7 @@ the master key to the success.
 Your application security team must start an awareness program and introduce IT
 people to the risks your core business might occur if attacked.
 
-You have to _show_ how a web application attack is made. 
+You have to _show_ how a web application attack is made.
 Take [OWASP WebGoat](http://code.google.com/p/webgoat/) as target and break it.
 It could be even better if you'd use an internal version of your web
 application as example.
@@ -57,7 +57,7 @@ but to train them about risk and show what an attacker can do with their code.
 
 A very useful tool it would be a sort of coding dojo for developers to quick
 mockup the code. They will have a quick feedback about code security level and
-project manager can have some KPI indicators about their team improvementes. 
+project manager can have some KPI indicators about their team improvementes.
 
 ## Pitfall 0x02: early stages aren't important enough
 
@@ -69,7 +69,7 @@ _How can I access this page? Which protocols do you support? Is there any API?
 Is your database well protected?_
 
 For development team that doesn't think application security as a key component
-of their workflow, those questions are either not important at all. 
+of their workflow, those questions are either not important at all.
 
 However a quick and dirty threat model can address mitigations task you can suggest
 when you find something. You must give developers some added value.
@@ -98,14 +98,12 @@ This table can be used as quick start reference:
 
 ## Pitfall 0x03: a tool's output is something I need
 
-Yesterday I launched a commercial static analysis tool over 
+Yesterday I launched a commercial static analysis tool over
 [latest wordpress version](http://www.wordpress.org), 3.4.2 at the time I'm
 writing this post.
 
-{% blockquote %}
-As a security specialist I think that commercial SAST tool vendors have a great
-marketing team instead of a powerful knowledge base.
-{% endblockquote %}
+> As a security specialist I think that commercial SAST tool vendors have a great
+> marketing team instead of a powerful knowledge base.
 
 I expected to find no more than a couple of things; wordpress 3.4 is mature and
 strong enough and its team just released a lot of security fixes.
@@ -117,7 +115,7 @@ Scriptings.
 
 _That's insane._
 
-If I had to manually review all high level severity findings, it will take me days. 
+If I had to manually review all high level severity findings, it will take me days.
 It would be clever to manually review some interesting code snippets related
 about DB post saving or HTTP requests handling.
 
@@ -161,10 +159,8 @@ the target audience are developers. Code snippet and programming design patterns
 be used instead of theoretical security considerations (they still great for
 remediation introduction, just for awareness sake).
 
-{% blockquote %}
-Testing only the static analysis bit (or just making a penetration test) it's
-like testing car brakes without checking if the engine turns on.
-{% endblockquote %}
+> Testing only the static analysis bit (or just making a penetration test) it's
+> like testing car brakes without checking if the engine turns on.
 
 Output for security tests won't be in term of _fix your code for injection_ or
 _if you're a java application then use this ESAPI class_ (if testing a .NET or
@@ -172,8 +168,8 @@ Ruby project).
 
 Fixes has to be as specific as possible and they must be written in the same programming
 language used by the application.
-Fill your report with third parties libraries suggestions, like 
-[OWASP ESAPI](https://www.owasp.org/index.php/Category:OWASP_Enterprise_Security_API), 
+Fill your report with third parties libraries suggestions, like
+[OWASP ESAPI](https://www.owasp.org/index.php/Category:OWASP_Enterprise_Security_API),
 and strongly encourage your development team to use opensource code that
 eventually it can be reviewed for security issues instead of closed third party
 libraries.
@@ -181,7 +177,7 @@ libraries.
 This security recommendation, can be an example for an application written in
 ruby programming language:
 
-* put owasp-esapi-ruby gem into your Gemfile 
+* put owasp-esapi-ruby gem into your Gemfile
 
 ```
 ...
@@ -207,7 +203,7 @@ include Esapi::Sanitize
 
 As said earlier in this post, static analysis even when using the most powerful
 commercial tool out there, doesn't cover all the possible security check you
-can do over your code. 
+can do over your code.
 
 If you don't actively stress some piece of code with tampered data you can't
 say if it's a good sanitization routine or if it's a simply vulnerable piece of
@@ -246,7 +242,7 @@ unmanaged exception, can you please tell your developers about try and catch?_
 
 ### Go hybrid now and start fuzzing
 
-Looks weird? You have to image the two tests like the two faces of the same coin. 
+Looks weird? You have to image the two tests like the two faces of the same coin.
 What about the Cross site scripting or the SQL Injection the static analysis is
 pretty sure it will happen but the penetration test didn't report?
 
@@ -262,7 +258,7 @@ Well the tool itself can't say nothing about the controls() routine that is
 here to make input sanitize.
 A clever approach is would be, save the controls() routine as a standalone
 piece of code and start stressing it with attack patterns looking how it
-behaves. 
+behaves.
 
 If code won't affect in any way the attack patterns leaving the data content
 unmanaged then the data flow can be tainted, otherwise you have to mark this
@@ -273,7 +269,7 @@ In order to have this kind of approach running, your tool must be able to
 either compile or launch the code you want to fuzz creating on the fly a
 testing source code like:
 
-``` ruby 
+``` ruby
 
 patterns = load_attack_patterns # load our knowledge base content
 
@@ -283,7 +279,7 @@ patterns.each do |pattern|
   tainted = output.tainted?
 end
 
-``` 
+```
 
 Your home-brewed fuzzing framework must provide:
 
@@ -315,5 +311,3 @@ commercial tools. Opensource alternatives perform as good as their [commercial c
 Enjoy it!
 
 _Pitfall street in Leeds picture is credit by [Tim](http://www.flickr.com/photos/atoach/)_
-
-

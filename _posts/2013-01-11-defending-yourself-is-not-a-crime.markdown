@@ -8,8 +8,8 @@ featured: false
 tags: lets-talk-about simple-life rails activerecord actionpack sql-injection defensive-programming filtering-input waf modsecurity owasp-modsecurity-crs java 0-day cve-2013-0155 cve-2013-0156 cve-2013-0422
 thumb: teaser.png
 level:
-hn: 
-rd: 
+hn:
+rd:
 ---
 
 When I wrote [last week post](http://armoredcode.com/blog/cve-2012-5664-sql-injection-on-rails-dot-dot-dot-again/)
@@ -51,11 +51,9 @@ In order to achieve this you have to trust and use your underlying framework
 but you don't want to became a slave of its features. This leads to a simple
 *mantra* I use everytime I talk to a developer about application security:
 
-{% blockquote %}
-Choose a framework that is security aware but don't rely on that. Your code
-must handle and validate all inputs coming from HTTP request, filesystem,
-database, whatever.
-{% endblockquote %}
+> Choose a framework that is security aware but don't rely on that. Your code
+> must handle and validate all inputs coming from HTTP request, filesystem,
+> database, whatever.
 
 This week two vulnerabilities were found again on ActiveRecord and ActionPack
 Rails framework components. A Metasploit exploit was delivered out-of-the-box
@@ -85,4 +83,3 @@ Don't miss the opportunity to implement a real input validation policy for all
 the stuff related to your web experience.
 Life is too short to recover from a system compromise just because you didn't
 apply some if or regex to make your data safe.
-

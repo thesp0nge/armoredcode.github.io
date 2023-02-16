@@ -8,8 +8,8 @@ featured: false
 tags: owasp builders ruby ruby-on-rails cheatsheet appsec
 thumb: cheatsheet.png
 level:
-hn: 
-rd: 
+hn:
+rd:
 ---
 
 [Jim Manico](http://www.manico.net/) is a friend and a rinomated security
@@ -22,15 +22,13 @@ available.
 
 I asked Jim to introduce himself.
 
-{% blockquote Jim Manico http://www.manico.net %}
-Jim Manico is the VP of Security Architecture for WhiteHat
-Security, a web security firm. He authors and delivers developer
-security awareness training for WhiteHat Security and has a background
-as a software developer and architect. Jim is also a global board member
-for the OWASP foundation. He manages and participates in several OWASP
-projects, including the OWASP cheat sheet series and the OWASP podcast
-series.
-{% endblockquote %}
+> Jim Manico is the VP of Security Architecture for WhiteHat
+> Security, a web security firm. He authors and delivers developer
+> security awareness training for WhiteHat Security and has a background
+> as a software developer and architect. Jim is also a global board member
+> for the OWASP foundation. He manages and participates in several OWASP
+> projects, including the OWASP cheat sheet series and the OWASP podcast
+> series.
 
 This is a critical review about the cheatsheet. My concern, as well other
 venerable Owasp leaders, is to provide content that it can be consumed by
