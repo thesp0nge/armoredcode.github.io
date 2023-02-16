@@ -58,9 +58,7 @@ behind [codesake.com](http://codesake.com) application security startup, but
 it's quite early to talk about it. The thing to remember is that the security
 engines will be opensource, **ever**.
 
-So, I hope you enjoyed the talk. In case you missed, because you were not there, here is my slides:
-
-{% speakerdeck 6eedd1508e3f01305f0312313815291c %}
+So, I hope you enjoyed the talk. In case you missed, because you were not there, here is my [slides](https://speakerdeck.com/thesp0nge/solid-as-diamond-using-ruby-in-a-web-application-penetration-test)
 
 With demo videos too.
 
