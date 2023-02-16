@@ -30,14 +30,12 @@ and the IP address is 192.168.56.104.
 As all takeover journeys, the first step is to nmap the target discovering
 opened ports and associated services.
 
-{%asciicast 223857 %}
 
 As we can see, we've got SSH server running on port 22 and two webservers on
 port 80 and 31337.
 We can use _dirb_ tool to enumerate website content, discovering pages and
 other resources.
 
-{% asciicast 223856 %}
 
 From the video below, you can see that the intended path was hidden in HTML source.
 On webserver port 80, the "service" hint was a rabbit picture and the filename
@@ -53,20 +51,17 @@ Decoding the base64, we can see as a suggestion this statement:
 echo "Then you'll see, that it is not the spoon that bends, it is only yourself. " > Cypher.matrix#
 {%endhighlight%}
 
-{% asciicast 223851 %}
 
 ## Let's go and break the door
 
 This hint suggests a Cypher.matrix file is present on the second webserver.
 Let's try to download it.
 
-{% asciicast 223858 %}
 
 It's a [brainfuck](https://en.wikipedia.org/wiki/Brainfuck) script, we can
 decode it with _beef_ tool. You can install it, on a Kali Linux with _apt
 install beef_.
 
-{% asciicast 223852 %}
 
 The script content is another hint, about the guest account ssh password.
 
@@ -79,10 +74,8 @@ We will use _crunch_ tool to generate an 8 characters password starting with
 _k1ll0r_ with the latest two characters substituted with all possible
 alphanumeric combinations.
 
-{%asciicast 223855%}
 
 We will use ncrack, passing the generated list, to find the password.
-{%asciicast 223859%}
 
 The guest account ssh password is k1ll0r7n.
 
@@ -103,7 +96,6 @@ So we will use the _guest_ password to launch a shell as root. Since we do want
 to have a working environment, we will ask sudo to launch a login shell (bash
 -l) to have the configuration files read and everything setted up.
 
-{%asciicast 223860%}
 
 ## Off by one
 

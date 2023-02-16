@@ -37,7 +37,6 @@ the final version of the script:
 
 {% gist 72c91cd96e4916914548f329fd787a0c %}
 
-{% asciicast 221509 %}
 
 Now I can easily use this output to run nmap on every network I will be
 attached to... and I improved a bit my bash scripting skills.

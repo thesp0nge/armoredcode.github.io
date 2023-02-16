@@ -79,7 +79,6 @@ jmp ecx
 
 See the code in action on gdb.
 
-{% asciicast 234762 %}
 
 Today I added those two shellcodes in [shellerate
 project](https://github.com/thesp0nge/shellerate/blob/master/shellerate/utils/asm_x86.py).

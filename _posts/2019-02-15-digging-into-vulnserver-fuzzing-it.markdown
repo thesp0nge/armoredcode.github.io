@@ -27,7 +27,7 @@ created a Windows 7 virtual machine for the Cracking the perimeter course
 exploit development training.
 
 Since this journey into Vulnserver.exe pants is tight with the upcoming exam, I
-decided to write exploit on this environment. 
+decided to write exploit on this environment.
 
 ![The vulnserver daemon listening]({{site.url}}/assets/images/vulnserver/clean_windows.png)
 
@@ -72,7 +72,6 @@ In the main loop, in order to handle the program restarts, I added a "wait for
 keypress" just continuing the loop after the vulnserver.exe it has been
 restarted.
 
-{% asciicast 227831 %}
 
 As you can see, when the fuzzer asks for a key press when it receives a socket
 error. When there is a socket error, on the windows machine, the situation is
@@ -106,7 +105,6 @@ Good.
 Now I will play again a full command fuzzing and hopefully I have the full list
 of vulnerable commands and the offending buffer length.
 
-{% asciicast 227838 %}
 
 Now, with the list of vulnerable commands in my hand, I can start my exploit
 development journey.

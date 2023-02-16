@@ -156,7 +156,6 @@ will point to the beginning of my decoded shellcode at the end of the process.
 You can see the process in action here. As you can see, the shellcode is
 working and a bind shellcode was listening on port 4444.
 
-{% asciicast 241806 %}
 
 What about anti virus tool then? I submitted my a.out file to Virus Total and
 only 3 engines out of 58 detected my encoded shellcode: [pretty sweet
